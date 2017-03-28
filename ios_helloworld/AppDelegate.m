@@ -19,16 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [super showWindowBackground];
+    
+    
     MainViewController * vc = [MainViewController new];
     self.window.rootViewController = vc;
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    
-    self.window.rootViewController = vc;
     [self.window makeKeyWindow];
-    NSLog(@"didFinishLaunchingWithOption: vc");
+    NSLog(@"\n didFinishLaunchingWithOption: vc");
     
     return YES;
 }

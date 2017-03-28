@@ -17,6 +17,7 @@
 		F495AB7D1E89160C00573334 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F495AB7C1E89160C00573334 /* MainViewController.m */; };
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
 		F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBC31E8A5680009CDF41 /* BaseController.m */; };
+		F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		F495AB7E1E89186C00573334 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F4C6DBC31E8A5680009CDF41 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		F4C6DBC61E8A577D009CDF41 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		F4C6DBCB1E8A6A45009CDF41 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
+		F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 			children = (
 				F4C6DBC31E8A5680009CDF41 /* BaseController.m */,
 				F4C6DBC61E8A577D009CDF41 /* BaseController.h */,
+				F4C6DBCB1E8A6A45009CDF41 /* BaseApplication.h */,
+				F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */,
 			);
 			name = baseui;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */,
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
 				F495AB7D1E89160C00573334 /* MainViewController.m in Sources */,
+				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

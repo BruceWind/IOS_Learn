@@ -6,12 +6,11 @@
 //  Copyright © 2017年 魏宗伟. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+#import "BaseApplication.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface AppDelegate : BaseApplication
 
 @end
 
