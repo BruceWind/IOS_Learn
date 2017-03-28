@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
+//实例化 window
 - (void)initUIWindow;
 @end
