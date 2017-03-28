@@ -7,7 +7,45 @@
 //
 
 #import "MainViewController.h"
+#import "ViewController.h"
+
+@interface MainViewController()
+//@property(strong,nonatomic) UITableView *tableView;
+
+@property(strong,nonatomic) UIButton *button;
+
+@end
 
 @implementation MainViewController
+
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    // 第一种方法 通过storyBord的名字 取得SB 再通过通过SB调用instantiateInitialViewController
+//    UIStoryboard *stroyB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    MainViewController *naVC = [stroyB instantiateInitialViewController];
+    
+    //  由storyboard根据myView的storyBoardID来获取我们要切换的视图
+//    MainViewController *VC = [stroyB instantiateViewControllerWithIdentifier:@"myView"];
+    
+    
+    
+    self.button = [[UIButton alloc] initWithFrame:(CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2, [[UIScreen mainScreen] bounds].size.width, 20))];
+    [self.button setTitle:@"skip" forState:UIControlStateNormal];
+    [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.view addSubview:self.button];
+    [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
+
+    [self toast:@"123":@"4353"];
+        
+}
+
+-(void)clickMe:(id)sender{
+    ViewController *vc = [[ViewController alloc] init];
+    self.view.window.rootViewController = vc;
+    
+}
 
 @end
