@@ -11,4 +11,13 @@
 
 - (void) toast:(NSString *) title :(NSString *) str;
 
+-(NSString *)getStr:(NSString *)key;
+
+-(void) logPrint:(NSString *)str;
+
+-(NSString *) getTag;
+
+-(void) printLn;
+
+
 @end

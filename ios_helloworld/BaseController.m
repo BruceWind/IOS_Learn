@@ -39,4 +39,21 @@
 }
 
 
+-(void) logPrint:(NSString *)str
+{
+    NSLog(@"%@ : %@", self.getTag,str);
+}
+
+-(void) printLn
+{
+    NSLog(@"\n");
+}
+
+
+-(NSString *) getTag
+{
+    return NSStringFromClass([self class]);
+}
+
+
 @end

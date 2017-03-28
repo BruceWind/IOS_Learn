@@ -6,18 +6,20 @@
 //  Copyright © 2017年 魏宗伟. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ButtonViewController.h"
 
-@interface ViewController ()
+@interface ButtonViewController ()
 
 @property(strong,nonatomic) UIButton *button;
 
 @end
 
-@implementation ViewController
+@implementation ButtonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
     
     /**begin
     self.button = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, 20)];
@@ -33,6 +35,7 @@
     [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.button];
     [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
+    
     
 }
 

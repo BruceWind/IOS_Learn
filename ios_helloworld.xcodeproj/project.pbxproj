@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F45280AB1E88E0C0000C9F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AA1E88E0C0000C9F45 /* main.m */; };
 		F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AD1E88E0C0000C9F45 /* AppDelegate.m */; };
-		F45280B11E88E0C0000C9F45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280B01E88E0C0000C9F45 /* ViewController.m */; };
+		F45280B11E88E0C0000C9F45 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280B01E88E0C0000C9F45 /* ButtonViewController.m */; };
 		F45280B61E88E0C0000C9F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45280B51E88E0C0000C9F45 /* Assets.xcassets */; };
 		F45280C41E88E0C0000C9F45 /* ios_helloworldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280C31E88E0C0000C9F45 /* ios_helloworldTests.m */; };
 		F45280CF1E88E0C0000C9F45 /* ios_helloworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280CE1E88E0C0000C9F45 /* ios_helloworldUITests.m */; };
@@ -18,6 +18,7 @@
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
 		F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBC31E8A5680009CDF41 /* BaseController.m */; };
 		F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */; };
+		F4C6DBD91E8A7ACA009CDF41 /* CoreLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD81E8A7ACA009CDF41 /* CoreLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,8 @@
 		F45280AA1E88E0C0000C9F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F45280AC1E88E0C0000C9F45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F45280AD1E88E0C0000C9F45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F45280AF1E88E0C0000C9F45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F45280B01E88E0C0000C9F45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F45280AF1E88E0C0000C9F45 /* ButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
+		F45280B01E88E0C0000C9F45 /* ButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		F45280B51E88E0C0000C9F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45280BA1E88E0C0000C9F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F45280BF1E88E0C0000C9F45 /* ios_helloworldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_helloworldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +61,7 @@
 		F4C6DBC61E8A577D009CDF41 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
 		F4C6DBCB1E8A6A45009CDF41 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
 		F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApplication.m; sourceTree = "<group>"; };
+		F4C6DBD81E8A7ACA009CDF41 /* CoreLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +114,12 @@
 		F45280A81E88E0C0000C9F45 /* ios_helloworld */ = {
 			isa = PBXGroup;
 			children = (
+				F4C6DBD51E8A7502009CDF41 /* component */,
 				F4C6DBC21E8A5649009CDF41 /* baseui */,
 				F45280AC1E88E0C0000C9F45 /* AppDelegate.h */,
 				F45280AD1E88E0C0000C9F45 /* AppDelegate.m */,
-				F45280AF1E88E0C0000C9F45 /* ViewController.h */,
-				F45280B01E88E0C0000C9F45 /* ViewController.m */,
+				F45280AF1E88E0C0000C9F45 /* ButtonViewController.h */,
+				F45280B01E88E0C0000C9F45 /* ButtonViewController.m */,
 				F45280B51E88E0C0000C9F45 /* Assets.xcassets */,
 				F495AB7B1E89160C00573334 /* MainViewController.h */,
 				F495AB7C1E89160C00573334 /* MainViewController.m */,
@@ -161,6 +164,14 @@
 				F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */,
 			);
 			name = baseui;
+			sourceTree = "<group>";
+		};
+		F4C6DBD51E8A7502009CDF41 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				F4C6DBD81E8A7ACA009CDF41 /* CoreLogger.m */,
+			);
+			name = component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F45280B11E88E0C0000C9F45 /* ViewController.m in Sources */,
+				F45280B11E88E0C0000C9F45 /* ButtonViewController.m in Sources */,
 				F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */,
 				F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */,
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
 				F495AB7D1E89160C00573334 /* MainViewController.m in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
+				F4C6DBD91E8A7ACA009CDF41 /* CoreLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

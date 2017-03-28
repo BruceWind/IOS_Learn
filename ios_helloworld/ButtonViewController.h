@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BaseController.h"
 
-@interface ViewController : BaseController
+@interface ButtonViewController : BaseController
 
 
 @end
