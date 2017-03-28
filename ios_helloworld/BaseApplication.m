@@ -15,16 +15,13 @@
 
 @implementation BaseApplication
 
-- (void)showWindowBackground
+- (void)initUIWindow
 {
     
-    self.window = [UIWindow new];
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+//    self.window = [UIWindow new];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyWindow];
     [self.window makeKeyAndVisible];
-    
-    
     
 }
 

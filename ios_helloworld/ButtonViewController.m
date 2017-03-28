@@ -18,17 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
-    /**begin
-    self.button = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, [[UIScreen mainScreen] bounds].size.width, 20)];
-    [self.button setTitle:@"跳转" forState:UIControlStateNormal];
-    [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self.view addSubview:self.button];
-    
-    [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
-    //end**/
 
     self.button = [[UIButton alloc] initWithFrame:(CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2, [[UIScreen mainScreen] bounds].size.width, 20))];
     [self.button setTitle:@"toast" forState:UIControlStateNormal];

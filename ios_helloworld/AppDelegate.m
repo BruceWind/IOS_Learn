@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [super showWindowBackground];
+    [super initUIWindow];
     
     
     MainViewController * vc = [MainViewController new];

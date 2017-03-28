@@ -13,5 +13,5 @@
 @property (strong, nonatomic) UIWindow *window;
 
 
-- (void)showWindowBackground;
+- (void)initUIWindow;
 @end
