@@ -35,9 +35,7 @@
     [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.button];
     [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    [self.navigationController setToolbarHidden:NO];
+
     
 }
 
@@ -49,6 +47,15 @@
     [self backToHome];
     
 }
+
+
+
+
+-(NSString *)getTitle
+{
+    return @"UIButton";
+}
+
 
 - (void) toast:(NSString *) title :(NSString *) str
 {

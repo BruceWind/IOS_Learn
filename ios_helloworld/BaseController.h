@@ -17,6 +17,9 @@
 
 -(NSString *) getTag;
 
+
+-(NSString *)getTitle;
+
 -(void) printLn;
 
 -(void)jump:(UIViewController *)vc;

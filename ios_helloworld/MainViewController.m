@@ -32,12 +32,11 @@
 //    [self.view addSubview:navbar];
     
     self.button = [[UIButton alloc] initWithFrame:(CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2, [[UIScreen mainScreen] bounds].size.width, 20))];
-    [self.button setTitle:@"skip" forState:UIControlStateNormal];
+    [self.button setTitle:[self getStr:@"SKIP"] forState:UIControlStateNormal];
     [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.button];
     [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.navigationController setToolbarHidden:NO animated:YES];
 }
 
 -(void)clickMe:(id)sender{
@@ -46,10 +45,9 @@
     
 }
 
-- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    self.title = @"首页";
-    return self;
+-(NSString *)getTitle
+{
+    return  [self getStr:@"HOME"];
 }
 
 @end
