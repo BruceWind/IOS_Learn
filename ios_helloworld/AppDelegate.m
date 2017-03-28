@@ -23,8 +23,13 @@
     
     
     MainViewController * vc = [MainViewController new];
-    self.window.rootViewController = vc;
-    [self.window makeKeyWindow];
+//    self.window.rootViewController = vc;
+    
+    
+    UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     NSLog(@"\n didFinishLaunchingWithOption: vc");
     
     return YES;

@@ -37,11 +37,16 @@
     [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
     
     
+    [self.navigationController setToolbarHidden:NO];
+    
 }
 
 
 -(void)clickMe:(id)sender{
-    [self toast:@"提示1" :@"test"];
+    
+//    [self toast:@"提示1" :@"test"];
+
+    [self backToHome];
     
 }
 
@@ -60,12 +65,6 @@
     
     //弹出提示框；
     [self presentViewController:alert animated:true completion:nil];
-}
-
-
--(NSString *)getStr:(NSString *)key
-{
-    return NSLocalizedStringFromTable(key,@"Localizable", nil);
 }
 
 @end

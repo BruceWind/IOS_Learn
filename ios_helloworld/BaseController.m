@@ -15,6 +15,14 @@
 
 @implementation BaseController
 
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self logPrint:@"viewDidLoad"];
+}
+
 - (void) toast:(NSString *) title :(NSString *) str
 {
     
@@ -47,6 +55,22 @@
 -(void) printLn
 {
     NSLog(@"\n");
+}
+
+-(void)jump:(UIViewController *)vc
+{
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)finish
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+-(void)backToHome
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

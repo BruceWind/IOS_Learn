@@ -23,31 +23,33 @@
 {
     [super viewDidLoad];
     
-    // 第一种方法 通过storyBord的名字 取得SB 再通过通过SB调用instantiateInitialViewController
-//    UIStoryboard *stroyB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    MainViewController *naVC = [stroyB instantiateInitialViewController];
-    
-    //  由storyboard根据myView的storyBoardID来获取我们要切换的视图
-//    MainViewController *VC = [stroyB instantiateViewControllerWithIdentifier:@"myView"];
-    
-    [self printLn];
+//    UINavigationBar *navbar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, 420, 50)];
+//    //do something like background color, title, etc you self
+//    
+//    navbar.topItem.title = @"首页";
+//    navbar.topItem.titleView.tintColor = [UIColor redColor];
+//    navbar.barStyle = UIBarStyleBlackTranslucent;
+//    [self.view addSubview:navbar];
     
     self.button = [[UIButton alloc] initWithFrame:(CGRectMake(0, [[UIScreen mainScreen]bounds].size.height/2, [[UIScreen mainScreen] bounds].size.width, 20))];
     [self.button setTitle:@"skip" forState:UIControlStateNormal];
     [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.button];
     [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
-
-//    [self toast:@"123":@"4353"];
     
-    [self logPrint:@"viewDidLoad"];
-    
+    [self.navigationController setToolbarHidden:NO animated:YES];
 }
 
 -(void)clickMe:(id)sender{
     ButtonViewController *vc = [[ButtonViewController alloc] init];
-    self.view.window.rootViewController = vc;
+    [self.navigationController pushViewController:vc animated:YES];
     
+}
+
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self.title = @"首页";
+    return self;
 }
 
 @end

@@ -19,5 +19,11 @@
 
 -(void) printLn;
 
+-(void)jump:(UIViewController *)vc;
+
+-(void)finish;
+
+//
+-(void)backToHome;
 
 @end
