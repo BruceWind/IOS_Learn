@@ -10,7 +10,11 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "BaseController.h"
+#import "TableItemModel.h"
 
 @interface MainViewController : BaseController
+
+
+-(NSMutableArray <TableItemModel *> *)generatorItemList;
 
 @end
