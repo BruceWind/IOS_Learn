@@ -2,8 +2,8 @@
 //  TableItemModel.m
 //  ios_helloworld
 //
-//  Created by 魏宗伟 on 2017/3/29.
-//  Copyright © 2017年 魏宗伟. All rights reserved.
+//  Created by wei on 2017/3/29.
+//  Copyright © 2017年 wei. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,10 +16,11 @@
 @implementation TableItemModel
 
 
--(TableItemModel *) initWith:(NSString *)t
+-(TableItemModel *) initWith:(NSString *)t:(Class)cls
 {
     TableItemModel * model=[super init];
     model.title=t;
+    model.cls = cls;
     return model;
 }
 @end

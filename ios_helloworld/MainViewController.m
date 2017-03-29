@@ -2,8 +2,8 @@
 //  MainViewController.m
 //  ios_helloworld
 //
-//  Created by 魏宗伟 on 2017/3/27.
-//  Copyright © 2017年 魏宗伟. All rights reserved.
+//  Created by wei on 2017/3/27.
+//  Copyright © 2017年 wei. All rights reserved.
 //
 
 #import "MainViewController.h"
@@ -55,6 +55,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString * stringValue=[@([indexPath row]) stringValue];
+    [self logPrint:[@"click:" stringByAppendingString:stringValue]];
+    
+    [self jump:[[_datalist objectAtIndex:indexPath.row].cls new]];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -66,9 +70,7 @@
 {
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
-    [list addObject:[[TableItemModel alloc] initWith:@"UIButton"]];
-    
-    [list addObject:[[TableItemModel alloc] initWith:@"UITableView"]];
+    [list addObject:[[TableItemModel alloc] initWith:@"UIButton":[ButtonViewController class]]];
     
     return list;
 }
