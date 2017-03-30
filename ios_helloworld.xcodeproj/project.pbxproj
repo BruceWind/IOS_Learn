@@ -17,9 +17,9 @@
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
 		F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBC31E8A5680009CDF41 /* BaseController.m */; };
 		F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */; };
-		F4C6DBD91E8A7ACA009CDF41 /* CoreLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD81E8A7ACA009CDF41 /* CoreLogger.m */; };
 		F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EED1D91E8BB260005BF07B /* TableItemModel.m */; };
 		F4EED1E41E8CE525005BF07B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4EED1E61E8CE525005BF07B /* Localizable.strings */; };
+		F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EED1EF1E8CEA9F005BF07B /* CoreLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +61,13 @@
 		F4C6DBC61E8A577D009CDF41 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
 		F4C6DBCB1E8A6A45009CDF41 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
 		F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApplication.m; sourceTree = "<group>"; };
-		F4C6DBD81E8A7ACA009CDF41 /* CoreLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLogger.m; sourceTree = "<group>"; };
 		F4EED1D81E8BB17C005BF07B /* TableItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableItemModel.h; sourceTree = "<group>"; };
 		F4EED1D91E8BB260005BF07B /* TableItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableItemModel.m; sourceTree = "<group>"; };
 		F4EED1E51E8CE525005BF07B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4EED1EC1E8CE5A8005BF07B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		F4EED1ED1E8CE5DB005BF07B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4EED1EE1E8CEA90005BF07B /* CoreLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreLogger.h; sourceTree = "<group>"; };
+		F4EED1EF1E8CEA9F005BF07B /* CoreLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +173,8 @@
 		F4C6DBD51E8A7502009CDF41 /* component */ = {
 			isa = PBXGroup;
 			children = (
-				F4C6DBD81E8A7ACA009CDF41 /* CoreLogger.m */,
+				F4EED1EE1E8CEA90005BF07B /* CoreLogger.h */,
+				F4EED1EF1E8CEA9F005BF07B /* CoreLogger.m */,
 			);
 			name = component;
 			sourceTree = "<group>";
@@ -336,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */,
 				F45280B11E88E0C0000C9F45 /* ButtonViewController.m in Sources */,
 				F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */,
 				F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */,
@@ -343,7 +346,6 @@
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
 				F495AB7D1E89160C00573334 /* MainViewController.m in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
-				F4C6DBD91E8A7ACA009CDF41 /* CoreLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

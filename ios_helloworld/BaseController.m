@@ -11,6 +11,7 @@
 
 @property(strong,nonatomic) UIButton *button;
 
+
 @end
 
 @implementation BaseController
@@ -18,6 +19,8 @@
 
 - (void)viewDidLoad
 {
+    _logger = [[CoreLogger alloc]initWithObj:self];
+    
     [super viewDidLoad];
     
     [self logPrint:@"viewDidLoad"];
@@ -49,7 +52,13 @@
 
 -(void) logPrint:(NSString *)str
 {
-    NSLog(@"%@ : %@", self.getTag,str);
+    [_logger d:str];
+}
+
+
+-(void) logError:(NSString *)str
+{
+    [_logger error:str];
 }
 
 -(void) printLn
@@ -65,6 +74,12 @@
 -(void)finish
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [_logger  warning:@"viewDidDisappear"];
 }
 
 

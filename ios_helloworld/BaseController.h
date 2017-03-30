@@ -6,8 +6,11 @@
 //  Copyright © 2017年 wei. All rights reserved.
 //
 #import <UIKit/UIKit.h>
+#import "CoreLogger.h"
 
 @interface BaseController : UIViewController
+
+@property  CoreLogger * logger;
 
 //alert 显示弹窗
 - (void) toast:(NSString *) title :(NSString *) str;
