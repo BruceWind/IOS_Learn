@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad
 {
-    _logger = [[CoreLogger alloc]initWithObj:self];
+    logger = [[CoreLogger alloc]initWithObj:self];
     
     [super viewDidLoad];
     
@@ -52,13 +52,13 @@
 
 -(void) logPrint:(NSString *)str
 {
-    [_logger d:str];
+    [logger d:str];
 }
 
 
 -(void) logError:(NSString *)str
 {
-    [_logger error:str];
+    [logger error:str];
 }
 
 -(void) printLn
@@ -79,7 +79,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-    [_logger  warning:@"viewDidDisappear"];
+    [logger  warning:@"viewDidDisappear"];
 }
 
 

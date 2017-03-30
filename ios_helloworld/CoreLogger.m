@@ -31,19 +31,19 @@
 //blue log
 -(void)warning:(NSString *)str
 {
-    NSLog(@"💙 %@ : %@", _tagName ,str);
+    NSLog(@"🔵 %@ : %@", _tagName ,str);
 }
 
 //red log
 -(void)error:(NSString *)str
 {
-    NSLog(@"💔 %@ : %@", _tagName ,str);
+    NSLog(@"⭕ %@ : %@", _tagName ,str);
 }
 
 //crash log
 -(void)exception:(NSString *)str
 {
-    NSLog(@"⭕ %@ : %@", _tagName ,str);
+    NSLog(@"🚫 %@ : %@", _tagName ,str);
 }
 
 

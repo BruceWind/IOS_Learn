@@ -4,6 +4,7 @@
 //
 //  Created by wei on 2017/3/30.
 //  Copyright © 2017年 魏宗伟. All rights reserved.
+// http://typefacts.com/news/apple-color-emoji
 //
 
 #import <Foundation/Foundation.h>

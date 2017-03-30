@@ -8,10 +8,11 @@
 #import <UIKit/UIKit.h>
 #import "CoreLogger.h"
 
-@interface BaseController : UIViewController
+@interface BaseController : UIViewController{
 
-@property  CoreLogger * logger;
-
+@protected CoreLogger * logger;
+    
+}
 //alert 显示弹窗
 - (void) toast:(NSString *) title :(NSString *) str;
 

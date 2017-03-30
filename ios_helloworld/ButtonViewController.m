@@ -24,10 +24,10 @@
     [self.button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.button];
     [self.button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
-    [[self logger] error:@"错误日志"];
-    [[self logger] d:@"错误日志"];
-    [[self logger] warning:@"警告日志"];
-    [[self logger] exception:@"异常日志"];
+    [logger error:@"错误日志"];
+    [logger d:@"错误日志"];
+    [logger warning:@"警告日志"];
+    [logger exception:@"异常日志"];
 }
 
 
