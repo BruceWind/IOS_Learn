@@ -76,4 +76,9 @@
 }
 
 
+-(NSString *)getTitle
+{
+    return [self getStr:@"HOME"];
+}
+
 @end
