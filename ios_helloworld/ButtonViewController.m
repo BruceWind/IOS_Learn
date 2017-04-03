@@ -47,10 +47,7 @@
 
 -(void)clickMe:(id)sender{
     
-    //    [self toast:@"提示1" :@"test"];
-    
-    [self backToHome];
-    
+    [self toast:@"按钮被按下！"];
 }
 
 
@@ -61,22 +58,5 @@
     return @"UIButton";
 }
 
-
-- (void) toast:(NSString *) title :(NSString *) str
-{
-    
-    //初始化提示框；
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:str preferredStyle:  UIAlertControllerStyleAlert];
-    
-    [alert addAction:
-     [UIAlertAction actionWithTitle:
-      [self getStr:(@"YES")]
-                              style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}
-      ]
-     ];
-    
-    //弹出提示框；
-    [self presentViewController:alert animated:true completion:nil];
-}
 
 @end

@@ -26,11 +26,11 @@
     [self logPrint:@"viewDidLoad"];
 }
 
-- (void) toast:(NSString *) title :(NSString *) str
+- (void) toast:(NSString *) str
 {
     
     //初始化提示框；
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:str preferredStyle:  UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:[self getStr:@"TIPS"] message:str preferredStyle:  UIAlertControllerStyleAlert];
     
     [alert addAction:
      [UIAlertAction actionWithTitle:

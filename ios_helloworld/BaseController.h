@@ -14,7 +14,7 @@
     
 }
 //alert 显示弹窗
-- (void) toast:(NSString *) title :(NSString *) str;
+- (void) toast:(NSString *) str;
 
 //取得资源文件
 -(NSString *)getStr:(NSString *)key;
