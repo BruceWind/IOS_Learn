@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "ButtonViewController.h"
+#import "TextFieldController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -71,6 +72,9 @@
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
     [list addObject:[[TableItemModel alloc] initWith:@"UIButton":[ButtonViewController class]]];
+    
+    
+    [list addObject:[[TableItemModel alloc] initWith:@"UITextField":[TextFieldController class]]];
     
     return list;
 }
