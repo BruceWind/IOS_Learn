@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B607D8131E929892004E7DC9 /* yellow_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B607D8111E929892004E7DC9 /* yellow_button.png */; };
+		B607D8141E929892004E7DC9 /* grey_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B607D8121E929892004E7DC9 /* grey_button.png */; };
 		F45280AB1E88E0C0000C9F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AA1E88E0C0000C9F45 /* main.m */; };
 		F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AD1E88E0C0000C9F45 /* AppDelegate.m */; };
 		F45280B11E88E0C0000C9F45 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280B01E88E0C0000C9F45 /* ButtonViewController.m */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B607D8111E929892004E7DC9 /* yellow_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow_button.png; path = ../../../../Downloads/yellow_button.png; sourceTree = "<group>"; };
+		B607D8121E929892004E7DC9 /* grey_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey_button.png; path = ../../../../Downloads/grey_button.png; sourceTree = "<group>"; };
 		F45280A61E88E0C0000C9F45 /* ios_helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45280AA1E88E0C0000C9F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F45280AC1E88E0C0000C9F45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B607D80F1E9297CE004E7DC9 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				B607D8101E9297EC004E7DC9 /* img */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		B607D8101E9297EC004E7DC9 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				B607D8111E929892004E7DC9 /* yellow_button.png */,
+				B607D8121E929892004E7DC9 /* grey_button.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
 		F452809D1E88E0BF000C9F45 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +140,7 @@
 		F45280A81E88E0C0000C9F45 /* ios_helloworld */ = {
 			isa = PBXGroup;
 			children = (
+				B607D80F1E9297CE004E7DC9 /* resource */,
 				F4EED1E31E8CE50E005BF07B /* string */,
 				F4EED1D71E8BB014005BF07B /* model */,
 				F4EED1D61E8BAFF3005BF07B /* controller */,
@@ -274,6 +296,7 @@
 				TargetAttributes = {
 					F45280A51E88E0C0000C9F45 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = MN42ABF25Y;
 					};
 					F45280BE1E88E0C0000C9F45 = {
 						CreatedOnToolsVersion = 7.1;
@@ -314,6 +337,8 @@
 				F495AB7F1E89186C00573334 /* .gitignore in Resources */,
 				F4EED1E41E8CE525005BF07B /* Localizable.strings in Resources */,
 				F45280B61E88E0C0000C9F45 /* Assets.xcassets in Resources */,
+				B607D8131E929892004E7DC9 /* yellow_button.png in Resources */,
+				B607D8141E929892004E7DC9 /* grey_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = MN42ABF25Y;
 				INFOPLIST_FILE = ios_helloworld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -499,6 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = MN42ABF25Y;
 				INFOPLIST_FILE = ios_helloworld/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

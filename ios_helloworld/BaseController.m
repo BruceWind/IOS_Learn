@@ -94,6 +94,11 @@
     return NSStringFromClass([self class]);
 }
 
+-(UIImage *)getImg:(NSString *)key
+{
+    return [UIImage imageNamed:key];
+}
+
 
 -(NSString *)getTitle
 {

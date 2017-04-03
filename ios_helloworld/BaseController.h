@@ -19,6 +19,10 @@
 //取得资源文件
 -(NSString *)getStr:(NSString *)key;
 
+
+//取得资源文件
+-(UIImage *)getImg:(UIImage *)key;
+
 //打印日志
 -(void) logPrint:(NSString *)str;
 
