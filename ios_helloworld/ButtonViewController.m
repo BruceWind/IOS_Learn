@@ -18,7 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self  addMyBtn];
     
+    [self addDetailsButton];
+    [self addInfoButton];
+    
+}
+
+-(void)addMyBtn
+{
     self.button = [[UIButton alloc] initWithFrame:
                    (CGRectMake([[UIScreen mainScreen] bounds].size.width/3,
                                [[UIScreen mainScreen] bounds].size.height/2,
@@ -41,7 +49,27 @@
     [self.view addSubview:self.button];
     [_button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
     
+}
+
+-(void)addDetailsButton
+{
+    UIButton *detailDisclosureButton = [UIButton buttonWithType:
+                                        UIButtonTypeDetailDisclosure];
+    [detailDisclosureButton setFrame:CGRectMake(60, 150, 200, 40)];
+    [detailDisclosureButton setTitle:@"Details" forState:
+     UIControlStateNormal];
+    [self.view addSubview:detailDisclosureButton];
+
+}
+
+-(void)addInfoButton
+{
     
+    UIButton *infoDarkButton = [UIButton buttonWithType:
+                                UIButtonTypeInfoDark];
+    [infoDarkButton setFrame:CGRectMake(60, 210, 200, 40)];
+    [infoDarkButton setTitle:@"info" forState:UIControlStateNormal];
+    [self.view addSubview:infoDarkButton];
 }
 
 
