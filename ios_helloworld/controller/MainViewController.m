@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "ButtonViewController.h"
 #import "TextFieldController.h"
+#import "StatusBarController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -75,6 +76,9 @@
     
     
     [list addObject:[[TableItemModel alloc] initWith:@"UITextField":[TextFieldController class]]];
+    
+    
+    [list addObject:[[TableItemModel alloc] initWith:@"UISwitch+StatusBar":[StatusBarController class]]];
     
     return list;
 }

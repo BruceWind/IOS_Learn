@@ -12,6 +12,7 @@
 		B607D81B1E92C6CD004E7DC9 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607D81A1E92C6CD004E7DC9 /* ButtonViewController.m */; };
 		B607D81E1E92C6FE004E7DC9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607D81D1E92C6FE004E7DC9 /* MainViewController.m */; };
 		B607D8241E92C858004E7DC9 /* TextFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607D8231E92C858004E7DC9 /* TextFieldController.m */; };
+		B6E2C3041E935CCD00617E3D /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2C3031E935CCD00617E3D /* StatusBarController.m */; };
 		F45280AB1E88E0C0000C9F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AA1E88E0C0000C9F45 /* main.m */; };
 		F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AD1E88E0C0000C9F45 /* AppDelegate.m */; };
 		F45280B61E88E0C0000C9F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45280B51E88E0C0000C9F45 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 		B607D81D1E92C6FE004E7DC9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = controller/MainViewController.m; sourceTree = "<group>"; };
 		B607D8221E92C830004E7DC9 /* TextFieldController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TextFieldController.h; path = controller/TextFieldController.h; sourceTree = "<group>"; };
 		B607D8231E92C858004E7DC9 /* TextFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldController.m; path = controller/TextFieldController.m; sourceTree = "<group>"; };
+		B6E2C3021E935C6000617E3D /* StatusBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StatusBarController.h; path = controller/StatusBarController.h; sourceTree = "<group>"; };
+		B6E2C3031E935CCD00617E3D /* StatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusBarController.m; path = controller/StatusBarController.m; sourceTree = "<group>"; };
 		F45280A61E88E0C0000C9F45 /* ios_helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45280AA1E88E0C0000C9F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F45280AC1E88E0C0000C9F45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 				B607D81A1E92C6CD004E7DC9 /* ButtonViewController.m */,
 				B607D8221E92C830004E7DC9 /* TextFieldController.h */,
 				B607D8231E92C858004E7DC9 /* TextFieldController.m */,
+				B6E2C3021E935C6000617E3D /* StatusBarController.h */,
+				B6E2C3031E935CCD00617E3D /* StatusBarController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				B607D8241E92C858004E7DC9 /* TextFieldController.m in Sources */,
 				B607D81B1E92C6CD004E7DC9 /* ButtonViewController.m in Sources */,
 				F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */,
+				B6E2C3041E935CCD00617E3D /* StatusBarController.m in Sources */,
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
 			);
