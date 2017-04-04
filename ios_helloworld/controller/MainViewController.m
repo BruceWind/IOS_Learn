@@ -10,6 +10,7 @@
 #import "ButtonViewController.h"
 #import "TextFieldController.h"
 #import "StatusBarController.h"
+#import "LabelController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -72,6 +73,7 @@
 {
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
+    [list addObject:[[TableItemModel alloc] initWith:@"UILabel":[LabelController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"UIButton":[ButtonViewController class]]];
     
     
