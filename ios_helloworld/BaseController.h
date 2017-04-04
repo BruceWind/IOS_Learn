@@ -29,6 +29,12 @@
 //取得当前日志TAG：类名
 -(NSString *) getTag;
 
+-(CGFloat)getNavigationHeight;
+
+-(CGFloat) getStatusBarHeight;
+//上面两个方法的相加
+-(CGFloat) getTopViewHeight;
+
 //返回title
 -(NSString *)getTitle;
 

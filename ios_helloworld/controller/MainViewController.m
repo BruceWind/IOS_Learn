@@ -11,6 +11,7 @@
 #import "TextFieldController.h"
 #import "StatusBarController.h"
 #import "LabelController.h"
+#import "ToolBarController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -81,6 +82,7 @@
     
     
     [list addObject:[[TableItemModel alloc] initWith:@"UISwitch+StatusBar":[StatusBarController class]]];
+    [list  addObject:[[TableItemModel alloc]initWith:@"Toolbar" :[ToolBarController class]]];
     
     return list;
 }

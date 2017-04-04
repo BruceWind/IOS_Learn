@@ -13,6 +13,7 @@
 		B607D81E1E92C6FE004E7DC9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607D81D1E92C6FE004E7DC9 /* MainViewController.m */; };
 		B607D8241E92C858004E7DC9 /* TextFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = B607D8231E92C858004E7DC9 /* TextFieldController.m */; };
 		B619BA421E93796C004BB509 /* LabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = B619BA411E93796C004BB509 /* LabelController.m */; };
+		B619BA461E937DD3004BB509 /* ToolBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B619BA451E937DD3004BB509 /* ToolBarController.m */; };
 		B6E2C3041E935CCD00617E3D /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2C3031E935CCD00617E3D /* StatusBarController.m */; };
 		F45280AB1E88E0C0000C9F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AA1E88E0C0000C9F45 /* main.m */; };
 		F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AD1E88E0C0000C9F45 /* AppDelegate.m */; };
@@ -55,6 +56,8 @@
 		B607D8231E92C858004E7DC9 /* TextFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldController.m; path = controller/TextFieldController.m; sourceTree = "<group>"; };
 		B619BA411E93796C004BB509 /* LabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabelController.m; path = controller/LabelController.m; sourceTree = "<group>"; };
 		B619BA431E937993004BB509 /* LabelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LabelController.h; path = controller/LabelController.h; sourceTree = "<group>"; };
+		B619BA441E937D9A004BB509 /* ToolBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ToolBarController.h; path = controller/ToolBarController.h; sourceTree = "<group>"; };
+		B619BA451E937DD3004BB509 /* ToolBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolBarController.m; path = controller/ToolBarController.m; sourceTree = "<group>"; };
 		B6E2C3021E935C6000617E3D /* StatusBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StatusBarController.h; path = controller/StatusBarController.h; sourceTree = "<group>"; };
 		B6E2C3031E935CCD00617E3D /* StatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusBarController.m; path = controller/StatusBarController.m; sourceTree = "<group>"; };
 		F45280A61E88E0C0000C9F45 /* ios_helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +226,8 @@
 				B6E2C3021E935C6000617E3D /* StatusBarController.h */,
 				B6E2C3031E935CCD00617E3D /* StatusBarController.m */,
 				B619BA411E93796C004BB509 /* LabelController.m */,
+				B619BA441E937D9A004BB509 /* ToolBarController.h */,
+				B619BA451E937DD3004BB509 /* ToolBarController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -307,7 +312,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "wei";
+				ORGANIZATIONNAME = wei;
 				TargetAttributes = {
 					F45280A51E88E0C0000C9F45 = {
 						CreatedOnToolsVersion = 7.1;
@@ -383,6 +388,7 @@
 				F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */,
 				B607D81E1E92C6FE004E7DC9 /* MainViewController.m in Sources */,
 				B607D8241E92C858004E7DC9 /* TextFieldController.m in Sources */,
+				B619BA461E937DD3004BB509 /* ToolBarController.m in Sources */,
 				B607D81B1E92C6CD004E7DC9 /* ButtonViewController.m in Sources */,
 				F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */,
 				B6E2C3041E935CCD00617E3D /* StatusBarController.m in Sources */,

@@ -5,9 +5,8 @@
 //  Created by wei on 2017/4/4.
 //  Copyright © 2017年 wei. All rights reserved.
 //
+#import "BaseController.h"
 
-#ifndef ToolBarController_h
-#define ToolBarController_h
+@interface ToolBarController : BaseController
 
-
-#endif /* ToolBarController_h */
+@end

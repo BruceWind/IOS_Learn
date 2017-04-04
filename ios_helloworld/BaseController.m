@@ -49,6 +49,20 @@
     return NSLocalizedStringFromTable(key,@"Localizable", nil);
 }
 
+-(CGFloat) getStatusBarHeight
+{
+    CGSize statusBarSize = [[UIApplication sharedApplication] statusBarFrame].size;
+    return MIN(statusBarSize.width, statusBarSize.height);
+}
+-(CGFloat) getTopViewHeight
+{
+    return [self getNavigationHeight] + [self getStatusBarHeight];
+}
+
+-(CGFloat)getNavigationHeight
+{
+    return self.navigationController.navigationBar.frame.size.height;
+}
 
 -(void) logPrint:(NSString *)str
 {
