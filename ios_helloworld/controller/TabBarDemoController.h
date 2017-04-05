@@ -12,7 +12,7 @@
 #ifndef MainTabController_h
 #define MainTabController_h
 
-@interface TabBarController : UITabBarController{
+@interface TabBarDemoController : UITabBarController{
 }
 
 @end

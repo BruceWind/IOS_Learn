@@ -17,7 +17,7 @@
 		B6E2C3041E935CCD00617E3D /* StatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2C3031E935CCD00617E3D /* StatusBarController.m */; };
 		F42545BC1E9512CA008B6174 /* TabAController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42545BB1E9512CA008B6174 /* TabAController.m */; };
 		F42545BE1E951367008B6174 /* TabBController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42545BD1E951367008B6174 /* TabBController.m */; };
-		F42545C11E951F51008B6174 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42545C01E951F51008B6174 /* TabBarController.m */; };
+		F42545C31E9522F6008B6174 /* TabBarDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42545C21E9522F6008B6174 /* TabBarDemoController.m */; };
 		F45280AB1E88E0C0000C9F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AA1E88E0C0000C9F45 /* main.m */; };
 		F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AD1E88E0C0000C9F45 /* AppDelegate.m */; };
 		F45280B61E88E0C0000C9F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45280B51E88E0C0000C9F45 /* Assets.xcassets */; };
@@ -67,8 +67,8 @@
 		F42545B81E95127A008B6174 /* TabBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBController.h; path = controller/TabBController.h; sourceTree = "<group>"; };
 		F42545BB1E9512CA008B6174 /* TabAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabAController.m; path = controller/TabAController.m; sourceTree = "<group>"; };
 		F42545BD1E951367008B6174 /* TabBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBController.m; path = controller/TabBController.m; sourceTree = "<group>"; };
-		F42545BF1E951ED0008B6174 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = controller/TabBarController.h; sourceTree = "<group>"; };
-		F42545C01E951F51008B6174 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = controller/TabBarController.m; sourceTree = "<group>"; };
+		F42545BF1E951ED0008B6174 /* TabBarDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarDemoController.h; path = controller/TabBarDemoController.h; sourceTree = "<group>"; };
+		F42545C21E9522F6008B6174 /* TabBarDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarDemoController.m; path = controller/TabBarDemoController.m; sourceTree = "<group>"; };
 		F45280A61E88E0C0000C9F45 /* ios_helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45280AA1E88E0C0000C9F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F45280AC1E88E0C0000C9F45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -225,8 +225,6 @@
 		F4EED1D61E8BAFF3005BF07B /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				F42545BD1E951367008B6174 /* TabBController.m */,
-				B619BA431E937993004BB509 /* LabelController.h */,
 				B607D81C1E92C6FE004E7DC9 /* MainViewController.h */,
 				B607D81D1E92C6FE004E7DC9 /* MainViewController.m */,
 				B607D8191E92C6CD004E7DC9 /* ButtonViewController.h */,
@@ -236,13 +234,15 @@
 				B6E2C3021E935C6000617E3D /* StatusBarController.h */,
 				B6E2C3031E935CCD00617E3D /* StatusBarController.m */,
 				B619BA411E93796C004BB509 /* LabelController.m */,
+				B619BA431E937993004BB509 /* LabelController.h */,
 				B619BA441E937D9A004BB509 /* ToolBarController.h */,
 				B619BA451E937DD3004BB509 /* ToolBarController.m */,
 				F42545B71E95123F008B6174 /* TabAController.h */,
-				F42545B81E95127A008B6174 /* TabBController.h */,
 				F42545BB1E9512CA008B6174 /* TabAController.m */,
-				F42545BF1E951ED0008B6174 /* TabBarController.h */,
-				F42545C01E951F51008B6174 /* TabBarController.m */,
+				F42545B81E95127A008B6174 /* TabBController.h */,
+				F42545BD1E951367008B6174 /* TabBController.m */,
+				F42545BF1E951ED0008B6174 /* TabBarDemoController.h */,
+				F42545C21E9522F6008B6174 /* TabBarDemoController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -398,7 +398,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42545C11E951F51008B6174 /* TabBarController.m in Sources */,
 				F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */,
 				F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */,
 				F42545BC1E9512CA008B6174 /* TabAController.m in Sources */,
@@ -408,6 +407,7 @@
 				B619BA461E937DD3004BB509 /* ToolBarController.m in Sources */,
 				B607D81B1E92C6CD004E7DC9 /* ButtonViewController.m in Sources */,
 				F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */,
+				F42545C31E9522F6008B6174 /* TabBarDemoController.m in Sources */,
 				B6E2C3041E935CCD00617E3D /* StatusBarController.m in Sources */,
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,

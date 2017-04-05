@@ -14,7 +14,7 @@
 #import "ToolBarController.h"
 #import "TabAController.h"
 #import "TabBController.h"
-#import "MainTabController.h"
+#import "TabBarDemoController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -90,7 +90,7 @@
     
     [list addObject:[[TableItemModel alloc] initWith:@"UISwitch+StatusBar":[StatusBarController class]]];
     [list  addObject:[[TableItemModel alloc]initWith:@"Toolbar" :[ToolBarController class]]];
-    [list  addObject:[[TableItemModel alloc]initWith:@"TabBarController" :[MainTabController class]]];
+    [list  addObject:[[TableItemModel alloc]initWith:@"TabBarController" :[TabBarDemoController class]]];
     
     return list;
 }
