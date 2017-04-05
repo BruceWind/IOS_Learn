@@ -12,6 +12,9 @@
 #import "StatusBarController.h"
 #import "LabelController.h"
 #import "ToolBarController.h"
+#import "TabAController.h"
+#import "TabBController.h"
+#import "MainTabController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -43,26 +46,30 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *SimpleTableIdentifier = @"SimpleTableIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SimpleTableIdentifier];
+
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: SimpleTableIdentifier];
     }
     
-    NSString *integerAsString = [@([indexPath row]) stringValue];
     cell.textLabel.text =[[_datalist objectAtIndex:[indexPath row]] title];
 //    cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"me_today_arrow.png"]];
     return cell;
+    
 }
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSString * stringValue=[@([indexPath row]) stringValue];
-    [self logPrint:[@"click:" stringByAppendingString:stringValue]];
     
-    [self jump:[[_datalist objectAtIndex:indexPath.row].cls new]];
+
+        NSString * stringValue=[@([indexPath row]) stringValue];
+        [self logPrint:[@"click:" stringByAppendingString:stringValue]];
+    
+        [self jump:[[_datalist objectAtIndex:indexPath.row].cls new]];
+
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -83,6 +90,7 @@
     
     [list addObject:[[TableItemModel alloc] initWith:@"UISwitch+StatusBar":[StatusBarController class]]];
     [list  addObject:[[TableItemModel alloc]initWith:@"Toolbar" :[ToolBarController class]]];
+    [list  addObject:[[TableItemModel alloc]initWith:@"TabBarController" :[MainTabController class]]];
     
     return list;
 }
