@@ -33,7 +33,7 @@
                                     initWithTitle:[self getStr:@"BACK"] style:UIBarButtonItemStyleBordered
                                     target:self action:@selector(click:)];
     [customItem1 setImage:[self getImg:@"back.png"]];
-    customItem1.title = [self getStr:@"BACK"];
+    customItem1.title = [self getStr:@"BACK"];//now working
     
     UIBarButtonItem *customItem2 = [[UIBarButtonItem alloc]
                                     initWithTitle:[self getStr:@"DONE"] style:UIBarButtonItemStyleDone
@@ -45,7 +45,8 @@
                           CGRectMake(0, [self getTopViewHeight], [[UIScreen mainScreen]bounds].size.width, 50)
                           ];
     [toolbar setBarStyle:UIBarStyleDefault];
-    [toolbar setBackgroundColor:[UIColor whiteColor]];
+    //    [toolbar setBackgroundColor:[UIColor whiteColor]];//这句并没有卵用
+//    toolbar.barTintColor = [UIColor grayColor];//这句有效
     [self.view addSubview:toolbar];
     [toolbar setItems:toolbarItems];
 }
