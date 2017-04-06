@@ -75,6 +75,19 @@
     [logger error:str];
 }
 
+
+-(CGFloat)getScreenHeight
+{
+    return [[UIScreen mainScreen]bounds].size.height;
+}
+
+
+-(CGFloat)getScreenWidth
+{
+    
+    return [[UIScreen mainScreen]bounds].size.width;
+}
+
 -(void) printLn
 {
     NSLog(@"\n");

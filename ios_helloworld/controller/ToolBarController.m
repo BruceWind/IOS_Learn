@@ -42,7 +42,7 @@
                              customItem1,spaceItem, customItem2, nil];
     UIToolbar *toolbar = [
                           [UIToolbar alloc]initWithFrame:
-                          CGRectMake(0, [self getTopViewHeight], [[UIScreen mainScreen]bounds].size.width, 50)
+                          CGRectMake(0, [self getTopViewHeight], [self getScreenWidth], 50)
                           ];
     [toolbar setBarStyle:UIBarStyleDefault];
     //    [toolbar setBackgroundColor:[UIColor whiteColor]];//这句并没有卵用

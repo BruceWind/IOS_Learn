@@ -31,6 +31,14 @@
 
 -(CGFloat)getNavigationHeight;
 
+
+
+-(CGFloat)getScreenHeight;
+
+
+-(CGFloat)getScreenWidth;
+
+
 -(CGFloat) getStatusBarHeight;
 //上面两个方法的相加
 -(CGFloat) getTopViewHeight;
