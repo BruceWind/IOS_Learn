@@ -11,7 +11,6 @@
 
 @interface LabelController()
 
-@property UILabel *label;
 
 @end
 

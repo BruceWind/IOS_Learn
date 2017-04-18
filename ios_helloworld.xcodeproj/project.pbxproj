@@ -30,6 +30,8 @@
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
 		F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBC31E8A5680009CDF41 /* BaseController.m */; };
 		F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */; };
+		F4C947581EA644140011BD8B /* CPlusTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4C947561EA644140011BD8B /* CPlusTest.cpp */; };
+		F4C9475B1EA644790011BD8B /* ObjCallCPlusController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C9475A1EA644790011BD8B /* ObjCallCPlusController.m */; };
 		F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EED1D91E8BB260005BF07B /* TableItemModel.m */; };
 		F4EED1E41E8CE525005BF07B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4EED1E61E8CE525005BF07B /* Localizable.strings */; };
 		F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EED1EF1E8CEA9F005BF07B /* CoreLogger.m */; };
@@ -97,6 +99,10 @@
 		F4C6DBC61E8A577D009CDF41 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
 		F4C6DBCB1E8A6A45009CDF41 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
 		F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseApplication.m; sourceTree = "<group>"; };
+		F4C947551EA643E80011BD8B /* CPlusTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPlusTest.h; sourceTree = "<group>"; };
+		F4C947561EA644140011BD8B /* CPlusTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlusTest.cpp; sourceTree = "<group>"; };
+		F4C947591EA644650011BD8B /* ObjCallCPlusController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCallCPlusController.h; sourceTree = "<group>"; };
+		F4C9475A1EA644790011BD8B /* ObjCallCPlusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCallCPlusController.m; sourceTree = "<group>"; };
 		F4EED1D81E8BB17C005BF07B /* TableItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableItemModel.h; sourceTree = "<group>"; };
 		F4EED1D91E8BB260005BF07B /* TableItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableItemModel.m; sourceTree = "<group>"; };
 		F4EED1E51E8CE525005BF07B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -174,6 +180,8 @@
 				F418B99E1EA6376C00143F1E /* ToolBarController.m */,
 				F418B99F1EA6376C00143F1E /* UITabBarController.h */,
 				F418B9A01EA6376C00143F1E /* UITabBarController.m */,
+				F4C947591EA644650011BD8B /* ObjCallCPlusController.h */,
+				F4C9475A1EA644790011BD8B /* ObjCallCPlusController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -183,6 +191,8 @@
 			children = (
 				F418B9AD1EA63B2B00143F1E /* test.c */,
 				F418B9AE1EA63B2B00143F1E /* test.h */,
+				F4C947551EA643E80011BD8B /* CPlusTest.h */,
+				F4C947561EA644140011BD8B /* CPlusTest.cpp */,
 			);
 			path = muxer;
 			sourceTree = "<group>";
@@ -426,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */,
+				F4C9475B1EA644790011BD8B /* ObjCallCPlusController.m in Sources */,
 				F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */,
 				F418B9A31EA6376C00143F1E /* MainViewController.m in Sources */,
 				F418B9A81EA6376C00143F1E /* TabBController.m in Sources */,
@@ -441,6 +452,7 @@
 				F418B9A21EA6376C00143F1E /* LabelController.m in Sources */,
 				F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */,
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
+				F4C947581EA644140011BD8B /* CPlusTest.cpp in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
 				F418B9A91EA6376C00143F1E /* TextFieldController.m in Sources */,
 			);

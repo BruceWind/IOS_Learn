@@ -1,13 +1,14 @@
 //
-//  ObjCallC.h
+//  CPlusTest.hpp
 //  ios_helloworld
 //
 //  Created by wei on 2017/4/18.
 //  Copyright © 2017年 wei. All rights reserved.
 //
 
-#import "LabelController.h"
+#ifndef CPlusTest_hpp
+#define CPlusTest_hpp
 
-@interface ObjCallCController : LabelController
+#include <stdio.h>
 
-@end
+#endif /* CPlusTest_hpp */

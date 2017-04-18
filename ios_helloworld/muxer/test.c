@@ -2,5 +2,5 @@
 
 char * c_get_str()
 {
-    return "this from C code.";
+    return "this string  from C code.";
 }

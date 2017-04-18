@@ -8,4 +8,6 @@
 #import "BaseController.h"
 @interface LabelController : BaseController
 
+@property(null_resettable, nonatomic,strong) UILabel *label;
+
 @end

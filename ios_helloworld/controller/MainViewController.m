@@ -16,6 +16,7 @@
 #import "TabBController.h"
 #import "TabBarDemoController.h"
 #import "ObjCallCController.h"
+#import "ObjCallCPlusController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -93,6 +94,9 @@
     [list addObject:[[TableItemModel alloc] initWith:@"UISwitch+StatusBar":[StatusBarController class]]];
     [list  addObject:[[TableItemModel alloc]initWith:@"Toolbar" :[ToolBarController class]]];
     [list  addObject:[[TableItemModel alloc]initWith:@"TabBarController" :[TabBarDemoController class]]];
+    
+    
+    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCPlusController":[ObjCallCPlusController class]]];
     
     return list;
 }
