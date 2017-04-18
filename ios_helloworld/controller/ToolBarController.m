@@ -19,8 +19,6 @@
 {
     [super viewDidLoad];
     [self addToolbar];
-    
-    
 }
 
 

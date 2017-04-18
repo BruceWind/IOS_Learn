@@ -15,6 +15,7 @@
 #import "TabAController.h"
 #import "TabBController.h"
 #import "TabBarDemoController.h"
+#import "ObjCallCController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -81,6 +82,7 @@
 {
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
+    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCController":[ObjCallCController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"UILabel":[LabelController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"UIButton":[ButtonViewController class]]];
     

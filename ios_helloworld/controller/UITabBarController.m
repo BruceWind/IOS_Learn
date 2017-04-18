@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UITabBarController.h"
 
 @interface UITabBarController()
 

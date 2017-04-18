@@ -6,7 +6,6 @@
 //  Copyright © 2017年 魏宗伟. All rights reserved.
 //
 #import "BaseController.h"
-
 @interface LabelController : BaseController
 
 @end
