@@ -16,10 +16,10 @@
 @implementation TableItemModel
 
 
--(TableItemModel *) initWith:(NSString *)t:(Class)cls
+-(TableItemModel *) initWith:(NSString *)title withCls:(Class)cls
 {
     TableItemModel * model=[super init];
-    model.title=t;
+    model.title=title;
     model.cls = cls;
     return model;
 }

@@ -83,7 +83,6 @@
 {
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
-    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCController":[ObjCallCController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"UILabel":[LabelController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"UIButton":[ButtonViewController class]]];
     
@@ -95,7 +94,7 @@
     [list  addObject:[[TableItemModel alloc]initWith:@"Toolbar" :[ToolBarController class]]];
     [list  addObject:[[TableItemModel alloc]initWith:@"TabBarController" :[TabBarDemoController class]]];
     
-    
+    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCController":[ObjCallCController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCPlusController":[ObjCallCPlusController class]]];
     
     return list;

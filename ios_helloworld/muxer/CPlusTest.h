@@ -15,7 +15,7 @@ extern "C" {
 #endif
 
 
-char * cplus_get_str();
+const char * cplus_get_str();
 #ifdef __cplusplus
 }
 #endif
