@@ -17,6 +17,6 @@
 @property (nonatomic, assign) Class cls;
 
 -(void)setTitle:(NSString *)title;
--(TableItemModel *) initWith:(NSString *)t:(Class )cls;
+-(TableItemModel *) initWith:(NSString *)title:(Class)cls;
 
 @end

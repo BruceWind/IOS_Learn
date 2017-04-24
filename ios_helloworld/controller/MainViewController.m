@@ -17,6 +17,7 @@
 #import "TabBarDemoController.h"
 #import "ObjCallCController.h"
 #import "ObjCallCPlusController.h"
+#import "UIImageViewController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -83,12 +84,10 @@
 {
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
-    [list addObject:[[TableItemModel alloc] initWith:@"UILabel":[LabelController class]]];
-    [list addObject:[[TableItemModel alloc] initWith:@"UIButton":[ButtonViewController class]]];
-    
-    
-    [list addObject:[[TableItemModel alloc] initWith:@"UITextField":[TextFieldController class]]];
-    
+    [list addObject:[[TableItemModel alloc] initWith:@"Label":[LabelController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"Button":[ButtonViewController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"TextField":[TextFieldController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"ImageView":[UIImageViewController class]]];
     
     [list addObject:[[TableItemModel alloc] initWith:@"UISwitch+StatusBar":[StatusBarController class]]];
     [list  addObject:[[TableItemModel alloc]initWith:@"Toolbar" :[ToolBarController class]]];

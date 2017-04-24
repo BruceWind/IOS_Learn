@@ -21,6 +21,8 @@
 		F418B9AA1EA6376C00143F1E /* ToolBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B99E1EA6376C00143F1E /* ToolBarController.m */; };
 		F418B9AB1EA6376C00143F1E /* UITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B9A01EA6376C00143F1E /* UITabBarController.m */; };
 		F418B9AF1EA63B2B00143F1E /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = F418B9AD1EA63B2B00143F1E /* test.c */; };
+		F420C7601EAE0FFB005746CB /* UIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C75F1EAE0FFB005746CB /* UIImageViewController.m */; };
+		F420C7621EAE18CD005746CB /* compress_erhai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F420C7611EAE18CD005746CB /* compress_erhai.jpg */; };
 		F42AB9AA1E95EF9A0073343D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F42AB9A91E95EF9A0073343D /* back.png */; };
 		F45280AB1E88E0C0000C9F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AA1E88E0C0000C9F45 /* main.m */; };
 		F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AD1E88E0C0000C9F45 /* AppDelegate.m */; };
@@ -81,6 +83,9 @@
 		F418B9A01EA6376C00143F1E /* UITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabBarController.m; sourceTree = "<group>"; };
 		F418B9AD1EA63B2B00143F1E /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		F418B9AE1EA63B2B00143F1E /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		F420C75E1EAE0F2C005746CB /* UIImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewController.h; sourceTree = "<group>"; };
+		F420C75F1EAE0FFB005746CB /* UIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewController.m; sourceTree = "<group>"; };
+		F420C7611EAE18CD005746CB /* compress_erhai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = compress_erhai.jpg; path = img/compress_erhai.jpg; sourceTree = "<group>"; };
 		F42AB9A91E95EF9A0073343D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = img/back.png; sourceTree = "<group>"; };
 		F45280A61E88E0C0000C9F45 /* ios_helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45280AA1E88E0C0000C9F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 		B607D8101E9297EC004E7DC9 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				F420C7611EAE18CD005746CB /* compress_erhai.jpg */,
 				F42AB9A91E95EF9A0073343D /* back.png */,
 				B607D8151E92C33E004E7DC9 /* grey_button.png */,
 				B607D8161E92C33E004E7DC9 /* yellow_button.png */,
@@ -182,6 +188,8 @@
 				F418B9A01EA6376C00143F1E /* UITabBarController.m */,
 				F4C947591EA644650011BD8B /* ObjCallCPlusController.h */,
 				F4C9475A1EA644790011BD8B /* ObjCallCPlusController.m */,
+				F420C75E1EAE0F2C005746CB /* UIImageViewController.h */,
+				F420C75F1EAE0FFB005746CB /* UIImageViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -409,6 +417,7 @@
 				B607D8181E92C33E004E7DC9 /* yellow_button.png in Resources */,
 				F42AB9AA1E95EF9A0073343D /* back.png in Resources */,
 				F495AB7F1E89186C00573334 /* .gitignore in Resources */,
+				F420C7621EAE18CD005746CB /* compress_erhai.jpg in Resources */,
 				F4EED1E41E8CE525005BF07B /* Localizable.strings in Resources */,
 				F45280B61E88E0C0000C9F45 /* Assets.xcassets in Resources */,
 			);
@@ -438,6 +447,7 @@
 				F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */,
 				F4C9475B1EA644790011BD8B /* ObjCallCPlusController.m in Sources */,
 				F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */,
+				F420C7601EAE0FFB005746CB /* UIImageViewController.m in Sources */,
 				F418B9A31EA6376C00143F1E /* MainViewController.m in Sources */,
 				F418B9A81EA6376C00143F1E /* TabBController.m in Sources */,
 				F418B9AB1EA6376C00143F1E /* UITabBarController.m in Sources */,

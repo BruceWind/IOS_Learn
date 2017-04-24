@@ -16,7 +16,7 @@
 @implementation TableItemModel
 
 
--(TableItemModel *) initWith:(NSString *)title withCls:(Class)cls
+-(TableItemModel *) initWith:(NSString *)title :(Class)cls
 {
     TableItemModel * model=[super init];
     model.title=title;
