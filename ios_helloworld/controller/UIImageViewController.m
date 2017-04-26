@@ -20,10 +20,16 @@
     [super viewDidLoad];
     
     _imageView = [[UIImageView alloc]
-                  initWithFrame:CGRectMake(0,0, 960, 480)
+                  initWithFrame:CGRectMake(0,0, [super getScreenWidth], [super getScreenHeight])
                   ];
     [_imageView setImage:[self getImg:@"compress_erhai.jpg"]];
     [self.view addSubview:_imageView];
+//    [_imageView setContentMode:UIViewContentModeScaleAspectFill];//剪切中间部分实现充满
+    
+//    [_imageView setContentMode:UIViewContentModeScaleToFill];//拉伸宽度或者高度实现充满
+    
+    
+    
 }
 
 @end
