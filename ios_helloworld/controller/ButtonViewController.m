@@ -47,7 +47,7 @@
     [_button setBackgroundImage:[UIImage imageNamed:@"gray_button.png"]  forState:UIControlStateHighlighted];
     
     [self.view addSubview:self.button];
-    [_button addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
+    [_button addTarget:self  action:@selector(clickBack:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -70,6 +70,10 @@
     [infoDarkButton setFrame:CGRectMake(60, 210, 200, 40)];
     [infoDarkButton setTitle:@"info" forState:UIControlStateNormal];
     [self.view addSubview:infoDarkButton];
+    
+    
+    [infoDarkButton addTarget:self action:@selector(clickMe:) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
 
@@ -78,11 +82,14 @@
     [self toast:@"按钮被按下！"];
 }
 
+-(void)clickBack:(id)sender{
+    [self finish];
+}
 
 
 
--(NSString *)getTitle
-{
+
+-(NSString *)getTitle{
     return @"UIButton";
 }
 
