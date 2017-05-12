@@ -7,6 +7,7 @@
 //
 
 #include "CPlusTest.h"
+
 const char * cplus_get_str()
 {
     return "this string from C++.";

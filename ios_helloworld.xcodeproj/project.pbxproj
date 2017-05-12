@@ -30,6 +30,8 @@
 		F45280C41E88E0C0000C9F45 /* ios_helloworldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280C31E88E0C0000C9F45 /* ios_helloworldTests.m */; };
 		F45280CF1E88E0C0000C9F45 /* ios_helloworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280CE1E88E0C0000C9F45 /* ios_helloworldUITests.m */; };
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
+		F4AB381D1EC5FFA5004F8809 /* ObjSun.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB381C1EC5FFA5004F8809 /* ObjSun.m */; };
+		F4AB38201EC60372004F8809 /* CPlusFather.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4AB381E1EC60372004F8809 /* CPlusFather.mm */; };
 		F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBC31E8A5680009CDF41 /* BaseController.m */; };
 		F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */; };
 		F4C947581EA644140011BD8B /* CPlusTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4C947561EA644140011BD8B /* CPlusTest.cpp */; };
@@ -100,6 +102,10 @@
 		F45280CE1E88E0C0000C9F45 /* ios_helloworldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_helloworldUITests.m; sourceTree = "<group>"; };
 		F45280D01E88E0C0000C9F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F495AB7E1E89186C00573334 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F4AB381B1EC5FF54004F8809 /* ObjSun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjSun.h; sourceTree = "<group>"; };
+		F4AB381C1EC5FFA5004F8809 /* ObjSun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjSun.m; sourceTree = "<group>"; };
+		F4AB381E1EC60372004F8809 /* CPlusFather.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CPlusFather.mm; sourceTree = "<group>"; };
+		F4AB381F1EC60372004F8809 /* CPlusFather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlusFather.h; sourceTree = "<group>"; };
 		F4C6DBC31E8A5680009CDF41 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		F4C6DBC61E8A577D009CDF41 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
 		F4C6DBCB1E8A6A45009CDF41 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
@@ -201,6 +207,10 @@
 				F418B9AE1EA63B2B00143F1E /* test.h */,
 				F4C947551EA643E80011BD8B /* CPlusTest.h */,
 				F4C947561EA644140011BD8B /* CPlusTest.cpp */,
+				F4AB381B1EC5FF54004F8809 /* ObjSun.h */,
+				F4AB381C1EC5FFA5004F8809 /* ObjSun.m */,
+				F4AB381E1EC60372004F8809 /* CPlusFather.mm */,
+				F4AB381F1EC60372004F8809 /* CPlusFather.h */,
 			);
 			path = muxer;
 			sourceTree = "<group>";
@@ -453,6 +463,7 @@
 				F418B9AB1EA6376C00143F1E /* UITabBarController.m in Sources */,
 				F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */,
 				F418B9AF1EA63B2B00143F1E /* test.c in Sources */,
+				F4AB38201EC60372004F8809 /* CPlusFather.mm in Sources */,
 				F418B9A11EA6376C00143F1E /* ButtonViewController.m in Sources */,
 				F418B9A71EA6376C00143F1E /* TabBarDemoController.m in Sources */,
 				F418B9AA1EA6376C00143F1E /* ToolBarController.m in Sources */,
@@ -464,6 +475,7 @@
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
 				F4C947581EA644140011BD8B /* CPlusTest.cpp in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
+				F4AB381D1EC5FFA5004F8809 /* ObjSun.m in Sources */,
 				F418B9A91EA6376C00143F1E /* TextFieldController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

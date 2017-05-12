@@ -14,8 +14,11 @@
 extern "C" {
 #endif
 
-
+//begin
 const char * cplus_get_str();
+//end
+    
+    
 #ifdef __cplusplus
 }
 #endif
