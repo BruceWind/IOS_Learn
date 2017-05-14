@@ -18,6 +18,7 @@
 #import "ObjCallCController.h"
 #import "ObjCallCPlusController.h"
 #import "UIImageViewController.h"
+#import "ScrollViewController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -93,8 +94,11 @@
     [list  addObject:[[TableItemModel alloc]initWith:@"Toolbar" :[ToolBarController class]]];
     [list  addObject:[[TableItemModel alloc]initWith:@"TabBarController" :[TabBarDemoController class]]];
     
-    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCController":[ObjCallCController class]]];
-    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCPlusController":[ObjCallCPlusController class]]];
+    [list  addObject:[[TableItemModel alloc]initWith:@"ScrollView" :[ScrollViewController class]]];
+
+    
+    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallC":[ObjCallCController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCPlus":[ObjCallCPlusController class]]];
     
     return list;
 }

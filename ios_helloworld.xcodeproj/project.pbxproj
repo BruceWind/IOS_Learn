@@ -32,6 +32,7 @@
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
 		F4AB381D1EC5FFA5004F8809 /* ObjSun.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB381C1EC5FFA5004F8809 /* ObjSun.m */; };
 		F4AB38201EC60372004F8809 /* CPlusFather.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4AB381E1EC60372004F8809 /* CPlusFather.mm */; };
+		F4AB38221EC7652A004F8809 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB38211EC7652A004F8809 /* ScrollViewController.m */; };
 		F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBC31E8A5680009CDF41 /* BaseController.m */; };
 		F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C6DBD31E8A6AD7009CDF41 /* BaseApplication.m */; };
 		F4C947581EA644140011BD8B /* CPlusTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4C947561EA644140011BD8B /* CPlusTest.cpp */; };
@@ -106,6 +107,8 @@
 		F4AB381C1EC5FFA5004F8809 /* ObjSun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjSun.m; sourceTree = "<group>"; };
 		F4AB381E1EC60372004F8809 /* CPlusFather.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CPlusFather.mm; sourceTree = "<group>"; };
 		F4AB381F1EC60372004F8809 /* CPlusFather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPlusFather.h; sourceTree = "<group>"; };
+		F4AB38211EC7652A004F8809 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		F4AB38231EC7653A004F8809 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		F4C6DBC31E8A5680009CDF41 /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
 		F4C6DBC61E8A577D009CDF41 /* BaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
 		F4C6DBCB1E8A6A45009CDF41 /* BaseApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApplication.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				F4C9475A1EA644790011BD8B /* ObjCallCPlusController.m */,
 				F420C75E1EAE0F2C005746CB /* UIImageViewController.h */,
 				F420C75F1EAE0FFB005746CB /* UIImageViewController.m */,
+				F4AB38211EC7652A004F8809 /* ScrollViewController.m */,
+				F4AB38231EC7653A004F8809 /* ScrollViewController.h */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */,
 				F4C9475B1EA644790011BD8B /* ObjCallCPlusController.m in Sources */,
 				F4C6DBC41E8A5680009CDF41 /* BaseController.m in Sources */,
+				F4AB38221EC7652A004F8809 /* ScrollViewController.m in Sources */,
 				F420C7601EAE0FFB005746CB /* UIImageViewController.m in Sources */,
 				F418B9A31EA6376C00143F1E /* MainViewController.m in Sources */,
 				F418B9A81EA6376C00143F1E /* TabBController.m in Sources */,
