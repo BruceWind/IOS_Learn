@@ -12,8 +12,8 @@
 
 @interface ScrollViewController()
 
-    @property UIScrollView *myScrollView;
-    @property     UIImageView *imageView;
+@property UIImageView *imageView;//scrollview content
+@property UIScrollView *scrollView;
 
 @end
 
@@ -35,9 +35,9 @@
 
 
 -(void)addScrollView{
-    _myScrollView = [[UIScrollView alloc]initWithFrame:
+    _scrollView = [[UIScrollView alloc]initWithFrame:
                     CGRectMake(20, 20, 280, 420)];
-    _myScrollView.accessibilityActivationPoint = CGPointMake(100, 100);
+    _scrollView.accessibilityActivationPoint = CGPointMake(100, 100);
     
     
     _imageView = [[UIImageView alloc]
@@ -47,13 +47,13 @@
     [self.view addSubview:_imageView];
     [_imageView setContentMode:UIViewContentModeScaleAspectFill];//剪切中间部分实现充满
     
-    [_myScrollView addSubview:_imageView];
-    _myScrollView.minimumZoomScale = 0.5;
-    _myScrollView.maximumZoomScale = 3;
-    _myScrollView.contentSize = CGSizeMake(_imageView.frame.size.width,
+    [_scrollView addSubview:_imageView];
+    _scrollView.minimumZoomScale = 0.5;
+    _scrollView.maximumZoomScale = 3;
+    _scrollView.contentSize = CGSizeMake(_imageView.frame.size.width,
                                           _imageView.frame.size.height);
-    _myScrollView.delegate = self;
-    [self.view addSubview:_myScrollView];
+    _scrollView.delegate = self;
+    [self.view addSubview:_scrollView];
 }
 
 
@@ -61,21 +61,31 @@
 -(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
     return _imageView;
 }
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    [super logPrint:@"Did end decelerating"];
-}
+
+//滚动结束
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    //    NSLog(@"Did scroll");
+    [super logPrint:@"Did scroll"];
 }
+
+//开始拖拽
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [super logPrint:@"Did begin dragging"];
+}
+
+//停止拖拽
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView
                  willDecelerate:(BOOL)decelerate{
     [super logPrint:@"Did end dragging"];
 }
+
+//开始减速
 -(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
     [super logPrint:@"Did begin decelerating"];
 }
--(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    [super logPrint:@"Did begin dragging"];
+
+//减速结束
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    [super logPrint:@"Did end decelerating"];
 }
 
 

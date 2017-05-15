@@ -22,7 +22,7 @@
     _imageView = [[UIImageView alloc]
                   initWithFrame:CGRectMake(0,0, [super getScreenWidth], [super getScreenHeight])
                   ];
-    [_imageView setImage:[self getImg:@"compress_erhai.jpg"]];
+    [_imageView setImage:[super getImg:@"compress_erhai.jpg"]];
     [self.view addSubview:_imageView];
     [_imageView setContentMode:UIViewContentModeScaleAspectFill];//剪切中间部分实现充满
     
