@@ -76,6 +76,12 @@
 }
 
 
+
+-(void) logWaring:(NSString *)str
+{
+    [logger warning:str];
+}
+
 -(CGFloat)getScreenHeight
 {
     return [[UIScreen mainScreen]bounds].size.height;

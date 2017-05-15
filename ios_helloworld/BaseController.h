@@ -26,6 +26,9 @@
 //打印日志
 -(void) logPrint:(NSString *)str;
 
+//打印警告信息
+-(void) logWaring:(NSString *)str;
+
 //取得当前日志TAG：类名
 -(NSString *) getTag;
 

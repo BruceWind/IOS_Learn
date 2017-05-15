@@ -80,23 +80,23 @@
 
 //开始拖拽
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    [super logPrint:@"Did begin dragging"];
+    [super logWaring:@"Did begin dragging"];
 }
 
 //停止拖拽
 -(void)scrollViewDidEndDragging:(UIScrollView *)scrollView
                  willDecelerate:(BOOL)decelerate{
-    [super logPrint:@"Did end dragging"];
+    [super logWaring:@"Did end dragging"];
 }
 
 //开始减速
 -(void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
-    [super logPrint:@"Did begin decelerating"];
+    [super logWaring:@"Did begin decelerating"];
 }
 
 //减速结束
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    [super logPrint:@"Did end decelerating"];
+    [super logWaring:@"Did end decelerating"];
 }
 
 
