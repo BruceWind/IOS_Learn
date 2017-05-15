@@ -48,11 +48,16 @@
     [_imageView setContentMode:UIViewContentModeScaleAspectFill];//剪切中间部分实现充满
     
     [_scrollView addSubview:_imageView];
-    _scrollView.minimumZoomScale = 0.5;
-    _scrollView.maximumZoomScale = 3;
+    _scrollView.minimumZoomScale = 0.5;//最小倍数 默认 1.0
+    _scrollView.maximumZoomScale = 2;//最大倍数 默认 1.0
     _scrollView.contentSize = CGSizeMake(_imageView.frame.size.width,
                                           _imageView.frame.size.height);
-    _scrollView.delegate = self;
+    _scrollView.delegate = self;//绑定滚动的一些监听事件
+
+    //隐藏滚动条
+    _scrollView.showsVerticalScrollIndicator = false;
+    _scrollView.showsHorizontalScrollIndicator = false;
+    
     [self.view addSubview:_scrollView];
 }
 
@@ -64,7 +69,13 @@
 
 //滚动结束
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    [super logPrint:@"Did scroll"];
+    if(_scrollView.decelerating)
+    {
+        [super logPrint:@"Did scroll, decelerating."];
+    }
+    else if(_scrollView.isDragging){
+            [super logPrint:@"Did scroll, draging."];
+    }
 }
 
 //开始拖拽
