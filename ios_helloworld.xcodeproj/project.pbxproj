@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		B607D8171E92C33E004E7DC9 /* grey_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B607D8151E92C33E004E7DC9 /* grey_button.png */; };
 		B607D8181E92C33E004E7DC9 /* yellow_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B607D8161E92C33E004E7DC9 /* yellow_button.png */; };
+		F41898281ED57BED006DA54B /* SLWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = F41898271ED57BED006DA54B /* SLWeibo.m */; };
+		F418982D1ED580FB006DA54B /* SLWeiBoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F418982C1ED580FB006DA54B /* SLWeiBoCell.m */; };
+		F41898301ED5814F006DA54B /* SLWeiBoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F418982F1ED5814F006DA54B /* SLWeiBoFrame.m */; };
+		F41898331ED583D7006DA54B /* SLWeiboController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41898321ED583D7006DA54B /* SLWeiboController.m */; };
 		F418B9A11EA6376C00143F1E /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B98C1EA6376C00143F1E /* ButtonViewController.m */; };
 		F418B9A21EA6376C00143F1E /* LabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B98E1EA6376C00143F1E /* LabelController.m */; };
 		F418B9A31EA6376C00143F1E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B9901EA6376C00143F1E /* MainViewController.m */; };
@@ -19,7 +23,6 @@
 		F418B9A81EA6376C00143F1E /* TabBController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B99A1EA6376C00143F1E /* TabBController.m */; };
 		F418B9A91EA6376C00143F1E /* TextFieldController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B99C1EA6376C00143F1E /* TextFieldController.m */; };
 		F418B9AA1EA6376C00143F1E /* ToolBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B99E1EA6376C00143F1E /* ToolBarController.m */; };
-		F418B9AB1EA6376C00143F1E /* UITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B9A01EA6376C00143F1E /* UITabBarController.m */; };
 		F418B9AF1EA63B2B00143F1E /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = F418B9AD1EA63B2B00143F1E /* test.c */; };
 		F420C7601EAE0FFB005746CB /* UIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C75F1EAE0FFB005746CB /* UIImageViewController.m */; };
 		F420C7621EAE18CD005746CB /* compress_erhai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F420C7611EAE18CD005746CB /* compress_erhai.jpg */; };
@@ -62,6 +65,14 @@
 /* Begin PBXFileReference section */
 		B607D8151E92C33E004E7DC9 /* grey_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey_button.png; path = img/grey_button.png; sourceTree = "<group>"; };
 		B607D8161E92C33E004E7DC9 /* yellow_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yellow_button.png; path = img/yellow_button.png; sourceTree = "<group>"; };
+		F41898261ED57B71006DA54B /* SLWeiBo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLWeiBo.h; sourceTree = "<group>"; };
+		F41898271ED57BED006DA54B /* SLWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLWeibo.m; path = model/SLWeibo.m; sourceTree = "<group>"; };
+		F418982B1ED58098006DA54B /* SLWeiBoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SLWeiBoCell.h; path = cell/SLWeiBoCell.h; sourceTree = "<group>"; };
+		F418982C1ED580FB006DA54B /* SLWeiBoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLWeiBoCell.m; path = cell/SLWeiBoCell.m; sourceTree = "<group>"; };
+		F418982E1ED58128006DA54B /* SLWeiBoFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLWeiBoFrame.h; sourceTree = "<group>"; };
+		F418982F1ED5814F006DA54B /* SLWeiBoFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SLWeiBoFrame.m; path = cell/SLWeiBoFrame.m; sourceTree = "<group>"; };
+		F41898311ED5837B006DA54B /* SLWeiboController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLWeiboController.h; sourceTree = "<group>"; };
+		F41898321ED583D7006DA54B /* SLWeiboController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLWeiboController.m; sourceTree = "<group>"; };
 		F418B98B1EA6376C00143F1E /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
 		F418B98C1EA6376C00143F1E /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 		F418B98D1EA6376C00143F1E /* LabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelController.h; sourceTree = "<group>"; };
@@ -82,8 +93,6 @@
 		F418B99C1EA6376C00143F1E /* TextFieldController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldController.m; sourceTree = "<group>"; };
 		F418B99D1EA6376C00143F1E /* ToolBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolBarController.h; sourceTree = "<group>"; };
 		F418B99E1EA6376C00143F1E /* ToolBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolBarController.m; sourceTree = "<group>"; };
-		F418B99F1EA6376C00143F1E /* UITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabBarController.h; sourceTree = "<group>"; };
-		F418B9A01EA6376C00143F1E /* UITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITabBarController.m; sourceTree = "<group>"; };
 		F418B9AD1EA63B2B00143F1E /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		F418B9AE1EA63B2B00143F1E /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		F420C75E1EAE0F2C005746CB /* UIImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewController.h; sourceTree = "<group>"; };
@@ -170,6 +179,17 @@
 			name = img;
 			sourceTree = "<group>";
 		};
+		F418982A1ED58089006DA54B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				F418982B1ED58098006DA54B /* SLWeiBoCell.h */,
+				F418982C1ED580FB006DA54B /* SLWeiBoCell.m */,
+				F418982E1ED58128006DA54B /* SLWeiBoFrame.h */,
+				F418982F1ED5814F006DA54B /* SLWeiBoFrame.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		F418B98A1EA6376C00143F1E /* controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,14 +213,14 @@
 				F418B99C1EA6376C00143F1E /* TextFieldController.m */,
 				F418B99D1EA6376C00143F1E /* ToolBarController.h */,
 				F418B99E1EA6376C00143F1E /* ToolBarController.m */,
-				F418B99F1EA6376C00143F1E /* UITabBarController.h */,
-				F418B9A01EA6376C00143F1E /* UITabBarController.m */,
 				F4C947591EA644650011BD8B /* ObjCallCPlusController.h */,
 				F4C9475A1EA644790011BD8B /* ObjCallCPlusController.m */,
 				F420C75E1EAE0F2C005746CB /* UIImageViewController.h */,
 				F420C75F1EAE0FFB005746CB /* UIImageViewController.m */,
 				F4AB38211EC7652A004F8809 /* ScrollViewController.m */,
 				F4AB38231EC7653A004F8809 /* ScrollViewController.h */,
+				F41898311ED5837B006DA54B /* SLWeiboController.h */,
+				F41898321ED583D7006DA54B /* SLWeiboController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -244,6 +264,7 @@
 		F45280A81E88E0C0000C9F45 /* ios_helloworld */ = {
 			isa = PBXGroup;
 			children = (
+				F418982A1ED58089006DA54B /* cell */,
 				F418B9AC1EA63B2B00143F1E /* muxer */,
 				F418B98A1EA6376C00143F1E /* controller */,
 				B607D80F1E9297CE004E7DC9 /* resource */,
@@ -311,6 +332,8 @@
 			children = (
 				F4EED1D81E8BB17C005BF07B /* TableItemModel.h */,
 				F4EED1D91E8BB260005BF07B /* TableItemModel.m */,
+				F41898261ED57B71006DA54B /* SLWeiBo.h */,
+				F41898271ED57BED006DA54B /* SLWeibo.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -466,7 +489,7 @@
 				F420C7601EAE0FFB005746CB /* UIImageViewController.m in Sources */,
 				F418B9A31EA6376C00143F1E /* MainViewController.m in Sources */,
 				F418B9A81EA6376C00143F1E /* TabBController.m in Sources */,
-				F418B9AB1EA6376C00143F1E /* UITabBarController.m in Sources */,
+				F41898301ED5814F006DA54B /* SLWeiBoFrame.m in Sources */,
 				F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */,
 				F418B9AF1EA63B2B00143F1E /* test.c in Sources */,
 				F4AB38201EC60372004F8809 /* CPlusFather.mm in Sources */,
@@ -481,8 +504,11 @@
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
 				F4C947581EA644140011BD8B /* CPlusTest.cpp in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
+				F41898281ED57BED006DA54B /* SLWeibo.m in Sources */,
 				F4AB381D1EC5FFA5004F8809 /* ObjSun.m in Sources */,
 				F418B9A91EA6376C00143F1E /* TextFieldController.m in Sources */,
+				F418982D1ED580FB006DA54B /* SLWeiBoCell.m in Sources */,
+				F41898331ED583D7006DA54B /* SLWeiboController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,7 @@
 #import "ObjCallCPlusController.h"
 #import "UIImageViewController.h"
 #import "ScrollViewController.h"
+#include "SLWeiboController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -99,6 +100,7 @@
     
     [list addObject:[[TableItemModel alloc] initWith:@"ObjCallC":[ObjCallCController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCPlus":[ObjCallCPlusController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"SLWeiboController":[SLWeiboController class]]];
     
     return list;
 }
