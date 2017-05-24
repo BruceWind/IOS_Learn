@@ -13,7 +13,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableView ;
 }
 
 #pragma mark -懒加载
@@ -103,7 +102,7 @@
  */
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SLWeiBoFrame *frame=self.statusFrames[indexPath.row];
+    SLWeiBoFrame *frame = self.statusFrames[indexPath.row];
     return frame.cellHeight;
 }
 /**

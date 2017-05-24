@@ -74,7 +74,8 @@
         CGFloat peituH=100;
         self.peituF=CGRectMake(peituX, peituY, peituW, peituH);
         self.cellHeight=CGRectGetMaxY(self.peituF)+padding;
-    }else
+    }
+    else
     {
         //无配图的情况下的行高
         self.cellHeight=CGRectGetMaxY(self.zhengwenF)+padding;
