@@ -27,10 +27,10 @@
         for (int i=0;i<2;i++) {
             //字典转模型，传进去一个字典，返回一个微博模型
             SLWeiBo *weibo=[[SLWeiBo alloc] init];
-            weibo.icon = @"http://leanote.com/public/upload/528/55d365b838f4112b52000e8c/images/logo/c1e6ec2cc6ab4c801e2a1155c7d56baf.jpg";
+            weibo.icon = @"https://avatars1.githubusercontent.com/u/6711309?v=3&s=460";
             weibo.text = @"dasdasd";
             weibo.name=@"name";
-            weibo.picture = @"http://images.cnitblog.com/i/429343/201405/292022544161450.png";
+            weibo.picture = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495636816575&di=8fe29696b8aa93f96c6455f7857fcf72&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01445b56f1ef176ac7257d207ce87d.jpg%40900w_1l_2o_100sh.jpg";
             //计算每一个表格的高度并保存
             SLWeiBoFrame *weiboframe=[[SLWeiBoFrame alloc] init];
             

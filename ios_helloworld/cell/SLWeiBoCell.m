@@ -6,8 +6,8 @@
 //  Copyright © 2017年 wei. All rights reserved.
 //
 #import "SLWeiBoCell.h"
-
 #import "SLWeiBoFrame.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #define SLFontNiCheng [UIFont systemFontOfSize:15]
 #define SLFontZhengWen [UIFont systemFontOfSize:16]
@@ -91,11 +91,23 @@
     self.zhengwen.text=weibof.text;
     //设置配图
     if (weibof.picture) {
-        self.peitu.image=[UIImage imageNamed:weibof.picture];
+        [
+         self.peitu
+         sd_setImageWithURL:[NSURL URLWithString:[weibof picture]]
+         placeholderImage:[UIImage imageNamed:@"back.png"]
+         ];
         self.peitu.hidden=NO;
     }else{
         self.peitu.hidden=YES;
     }
+    
+    
+    [
+     self.iconheader
+     sd_setImageWithURL:[NSURL URLWithString:[weibof icon]]
+     placeholderImage:[UIImage imageNamed:@"back.png"]
+     ];
+    
 }
 
 -(void)settingFrame

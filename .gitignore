@@ -16,6 +16,7 @@ DerivedData
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+*.lock
 
 ## Other
 *.xccheckout
@@ -28,6 +29,7 @@ xcuserdata
 *.hmap
 *.ipa
 
+Pods/
 .DS_Store
 
 # CocoaPods
