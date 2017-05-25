@@ -94,7 +94,7 @@
         [
          self.peitu
          sd_setImageWithURL:[NSURL URLWithString:[weibof picture]]
-         placeholderImage:[UIImage imageNamed:@"back.png"]
+         placeholderImage:[UIImage imageNamed:@"empty_img.png"]
          ];
         self.peitu.hidden=NO;
     }else{
@@ -105,7 +105,7 @@
     [
      self.iconheader
      sd_setImageWithURL:[NSURL URLWithString:[weibof icon]]
-     placeholderImage:[UIImage imageNamed:@"back.png"]
+     placeholderImage:[UIImage imageNamed:@"empty_img.png"]
      ];
     
 }
