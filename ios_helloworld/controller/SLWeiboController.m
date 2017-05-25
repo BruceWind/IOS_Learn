@@ -28,8 +28,8 @@
             //字典转模型，传进去一个字典，返回一个微博模型
             SLWeiBo *weibo=[[SLWeiBo alloc] init];
             weibo.icon = @"https://avatars1.githubusercontent.com/u/6711309?v=3&s=460";
-            weibo.text = @"dasdasd";
-            weibo.name=@"name";
+            weibo.text = [NSString stringWithFormat:@"%@ %d",@"内容详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情详情xxxxxxxxxxcccccccddddddddddddaaaaaaaaaa",i];
+            weibo.name=[NSString stringWithFormat:@"%@ %d",@"标题",i];
             weibo.picture = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495636816575&di=8fe29696b8aa93f96c6455f7857fcf72&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01445b56f1ef176ac7257d207ce87d.jpg%40900w_1l_2o_100sh.jpg";
             //计算每一个表格的高度并保存
             SLWeiBoFrame *weiboframe=[[SLWeiBoFrame alloc] init];
@@ -45,17 +45,7 @@
 }
 
 #pragma mark -实现数据源方法
-/**
- *  tableview中返回一共有多少组，有一组的话，可以省略不写
- *
- *  @param tableView
- *
- *  @return 返回有多少组
- */
--(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
+
 /**
  *  tableview返回一共有多少个单元格
  *

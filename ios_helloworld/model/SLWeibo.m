@@ -6,5 +6,4 @@
 
 @implementation SLWeiBo
 
-
 @end

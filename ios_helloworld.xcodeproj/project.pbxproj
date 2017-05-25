@@ -34,6 +34,7 @@
 		F45280C41E88E0C0000C9F45 /* ios_helloworldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280C31E88E0C0000C9F45 /* ios_helloworldTests.m */; };
 		F45280CF1E88E0C0000C9F45 /* ios_helloworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280CE1E88E0C0000C9F45 /* ios_helloworldUITests.m */; };
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
+		F4983A641ED6B0AC0031E322 /* compress_erhai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4983A631ED6B0AC0031E322 /* compress_erhai@2x.jpg */; };
 		F4AB381D1EC5FFA5004F8809 /* ObjSun.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB381C1EC5FFA5004F8809 /* ObjSun.m */; };
 		F4AB38201EC60372004F8809 /* CPlusFather.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4AB381E1EC60372004F8809 /* CPlusFather.mm */; };
 		F4AB38221EC7652A004F8809 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB38211EC7652A004F8809 /* ScrollViewController.m */; };
@@ -116,6 +117,7 @@
 		F45280CE1E88E0C0000C9F45 /* ios_helloworldUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_helloworldUITests.m; sourceTree = "<group>"; };
 		F45280D01E88E0C0000C9F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F495AB7E1E89186C00573334 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F4983A631ED6B0AC0031E322 /* compress_erhai@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "compress_erhai@2x.jpg"; path = "img/compress_erhai@2x.jpg"; sourceTree = "<group>"; };
 		F4AB381B1EC5FF54004F8809 /* ObjSun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjSun.h; sourceTree = "<group>"; };
 		F4AB381C1EC5FFA5004F8809 /* ObjSun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjSun.m; sourceTree = "<group>"; };
 		F4AB381E1EC60372004F8809 /* CPlusFather.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CPlusFather.mm; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		B607D8101E9297EC004E7DC9 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				F4983A631ED6B0AC0031E322 /* compress_erhai@2x.jpg */,
 				F420C7611EAE18CD005746CB /* compress_erhai.jpg */,
 				F42AB9A91E95EF9A0073343D /* back.png */,
 				B607D8151E92C33E004E7DC9 /* grey_button.png */,
@@ -481,6 +484,7 @@
 				B607D8171E92C33E004E7DC9 /* grey_button.png in Resources */,
 				B607D8181E92C33E004E7DC9 /* yellow_button.png in Resources */,
 				F42AB9AA1E95EF9A0073343D /* back.png in Resources */,
+				F4983A641ED6B0AC0031E322 /* compress_erhai@2x.jpg in Resources */,
 				F495AB7F1E89186C00573334 /* .gitignore in Resources */,
 				F420C7621EAE18CD005746CB /* compress_erhai.jpg in Resources */,
 				F4EED1E41E8CE525005BF07B /* Localizable.strings in Resources */,
