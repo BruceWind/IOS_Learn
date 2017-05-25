@@ -14,3 +14,5 @@
 > - 12.ObjC  Call C++
 > - 13.使用cocoapods
 > - 14.借助SDWebImage展示图片
+> - 15.不同分辨率分别区分2x 3x图片展示
+
