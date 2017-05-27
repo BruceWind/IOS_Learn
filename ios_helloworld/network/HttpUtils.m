@@ -18,11 +18,11 @@
 @implementation HttpUtils
 
 
-+(void)doPost:(NSString *)url : (NSDictionary *)param
++(void)doPost:(NSString *)url : (NSDictionary *)param :(JSON_CALLBACK)callback
 {
     
     AFHTTPRequestSerializer *req= [[AFHTTPRequestSerializer serializer]
-     requestWithMethod:@"POST"
+     requestWithMethod:@"GET"
      URLString:url
      parameters:param
      error:nil];
@@ -34,8 +34,12 @@
     [[manager dataTaskWithRequest:req completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         if (error) {
             NSLog(@"🔵 Error: %@", error);
+            callback(NO,responseObject);
         } else {
-            NSLog(@"🔵 %@ %@", response, responseObject);
+            NSLog(@"🌑 %@ %@", response, responseObject);
+            callback(YES,[NSJSONSerialization dataWithJSONObject:responseObject
+                                                         options:NSJSONWritingPrettyPrinted
+                                                           error:nil]);
         }
     }]resume];
   

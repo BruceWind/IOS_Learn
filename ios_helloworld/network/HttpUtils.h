@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HttpCallback.h"
+
 @interface HttpUtils:NSObject
 
-+(void)doPost:(NSString *)url : (NSDictionary *)param;
++(void)doPost:(NSString *)url : (NSDictionary *)param :(JSON_CALLBACK)callback;
 @end
