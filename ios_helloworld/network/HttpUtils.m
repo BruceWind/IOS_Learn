@@ -37,9 +37,7 @@
             callback(NO,responseObject);
         } else {
             NSLog(@"🌑 %@ %@", response, responseObject);
-            callback(YES,[NSJSONSerialization dataWithJSONObject:responseObject
-                                                         options:NSJSONWritingPrettyPrinted
-                                                           error:nil]);
+            callback(YES,responseObject);
         }
     }]resume];
   

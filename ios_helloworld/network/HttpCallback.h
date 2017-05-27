@@ -12,7 +12,7 @@
 #import <Foundation/Foundation.h>
 
 //api 异步调用回调Block
-typedef void (^JSON_CALLBACK)( BOOL requestSuccess,NSData*response);
+typedef void (^JSON_CALLBACK)( BOOL requestSuccess,NSDictionary*response);
 
 
 

@@ -48,6 +48,7 @@
 		F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EED1D91E8BB260005BF07B /* TableItemModel.m */; };
 		F4EED1E41E8CE525005BF07B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4EED1E61E8CE525005BF07B /* Localizable.strings */; };
 		F4EED1F01E8CEA9F005BF07B /* CoreLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EED1EF1E8CEA9F005BF07B /* CoreLogger.m */; };
+		F4F153671ED968B10087AFD1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = F4F153661ED968B10087AFD1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		F4EED1ED1E8CE5DB005BF07B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4EED1EE1E8CEA90005BF07B /* CoreLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreLogger.h; sourceTree = "<group>"; };
 		F4EED1EF1E8CEA9F005BF07B /* CoreLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLogger.m; sourceTree = "<group>"; };
+		F4F153661ED968B10087AFD1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 		F452809D1E88E0BF000C9F45 = {
 			isa = PBXGroup;
 			children = (
+				F4F153661ED968B10087AFD1 /* README.md */,
 				F495AB7E1E89186C00573334 /* .gitignore */,
 				F45280A81E88E0C0000C9F45 /* ios_helloworld */,
 				F45280C21E88E0C0000C9F45 /* ios_helloworldTests */,
@@ -597,6 +600,7 @@
 				F41898301ED5814F006DA54B /* SLWeiBoFrame.m in Sources */,
 				F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */,
 				F418B9AF1EA63B2B00143F1E /* test.c in Sources */,
+				F4F153671ED968B10087AFD1 /* README.md in Sources */,
 				F4AB38201EC60372004F8809 /* CPlusFather.mm in Sources */,
 				F418B9A11EA6376C00143F1E /* ButtonViewController.m in Sources */,
 				F418B9A71EA6376C00143F1E /* TabBarDemoController.m in Sources */,
