@@ -75,8 +75,6 @@
     [logger error:str];
 }
 
-
-
 -(void) logWaring:(NSString *)str
 {
     [logger warning:str];
@@ -144,5 +142,18 @@
     return self;
 }
 
+
+
+-(void)printThreadId
+{
+    if([[NSThread currentThread]isMainThread])
+    {
+        [self logPrint:@"isMainthread"];
+    }
+    else
+    {
+        [self logPrint:@"not IsMainthread"];
+    }
+}
 
 @end

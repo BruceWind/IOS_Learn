@@ -23,11 +23,10 @@
 //取得资源文件
 -(UIImage *)getImg:(UIImage *)key;
 
-//打印日志
+//打印三种不同等级日志
 -(void) logPrint:(NSString *)str;
-
-//打印警告信息
 -(void) logWaring:(NSString *)str;
+-(void) logError:(NSString *)str;
 
 //取得当前日志TAG：类名
 -(NSString *) getTag;
@@ -60,5 +59,8 @@
 
 //回到首页
 -(void)backToHome;
+
+//打印是否是主线程
+-(void)printThreadId;
 
 @end

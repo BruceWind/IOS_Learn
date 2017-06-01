@@ -87,7 +87,7 @@
 {
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
-    [list addObject:[[TableItemModel alloc] initWith:@"Label":[LabelController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"Thread/NSOperation/Label":[LabelController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"Button":[ButtonViewController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"TextField":[TextFieldController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"ImageView":[UIImageViewController class]]];
