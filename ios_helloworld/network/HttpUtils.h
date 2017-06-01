@@ -12,4 +12,9 @@
 @interface HttpUtils:NSObject
 
 +(void)doPost:(NSString *)url : (NSDictionary *)param :(JSON_CALLBACK)callback;
+
+
++(void)doGet:(NSString *)url : (NSDictionary *)param :(JSON_CALLBACK)callback;
+
+
 @end

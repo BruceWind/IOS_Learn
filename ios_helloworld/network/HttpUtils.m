@@ -22,7 +22,7 @@
 {
     
     AFHTTPRequestSerializer *req= [[AFHTTPRequestSerializer serializer]
-     requestWithMethod:@"GET"
+     requestWithMethod:@"POST"
      URLString:url
      parameters:param
      error:nil];
@@ -40,9 +40,36 @@
             callback(YES,responseObject);
         }
     }]resume];
+    
   
 }
-     
+
+
+
++(void)doGet:(NSString *)url : (NSDictionary *)param :(JSON_CALLBACK)callback
+{
+    
+    AFHTTPRequestSerializer *req= [[AFHTTPRequestSerializer serializer]
+                                   requestWithMethod:@"GET"
+                                   URLString:url
+                                   parameters:param
+                                   error:nil];
+    
+    
+    AFURLSessionManager *manager =
+    [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    [[manager dataTaskWithRequest:req completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"🔵 Error: %@", error);
+            callback(NO,responseObject);
+        } else {
+            NSLog(@"🌑 %@ %@", response, responseObject);
+            callback(YES,responseObject);
+        }
+    }]resume];
+    
+}
      
     
 @end
