@@ -69,6 +69,8 @@
     }];
     
     [opQueue addOperation:blockOp];
+    [blockOp waitUntilFinished];//阻塞当前线程等到 blockOp执行结束
+    [super logPrint:@"NSOperation finishded."];
     
     
 }
