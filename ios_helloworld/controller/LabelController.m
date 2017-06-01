@@ -59,6 +59,17 @@
         [super logPrint:@"NSOperation addOperationWithBlock 2."];
     }];
     
+    //NSOperation blockoper setcompletionblc
+    NSBlockOperation * blockOp= [NSBlockOperation blockOperationWithBlock:^{
+        sleep(1);
+        [super logPrint:@"NSOperation addOperationWithBlock 3."];
+    }];
+    [blockOp setCompletionBlock:^{
+        [super logPrint:@"NSOperation completion."];
+    }];
+    
+    [opQueue addOperation:blockOp];
+    
     
 }
 
