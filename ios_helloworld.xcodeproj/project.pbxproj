@@ -34,6 +34,7 @@
 		F45280CF1E88E0C0000C9F45 /* ios_helloworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280CE1E88E0C0000C9F45 /* ios_helloworldUITests.m */; };
 		F45846B61ED84F8B00729B9C /* HttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F45846B51ED84F8B00729B9C /* HttpUtils.m */; };
 		F45846BA1ED85E5C00729B9C /* HttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45846B91ED85E5C00729B9C /* HttpViewController.m */; };
+		F485D0F51EE03CB900346C48 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F485D0F41EE03CB900346C48 /* icon.png */; };
 		F487D9AC1ED6EE3D00948243 /* compress_erhai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F487D9AB1ED6EE3D00948243 /* compress_erhai@2x.jpg */; };
 		F487D9AE1ED6F9FA00948243 /* empty_img.png in Resources */ = {isa = PBXBuildFile; fileRef = F487D9AD1ED6F9FA00948243 /* empty_img.png */; };
 		F495AB7F1E89186C00573334 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = F495AB7E1E89186C00573334 /* .gitignore */; };
@@ -124,6 +125,7 @@
 		F45846B71ED84FA700729B9C /* HttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpUtils.h; path = network/HttpUtils.h; sourceTree = "<group>"; };
 		F45846B81ED85E3F00729B9C /* HttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpViewController.h; sourceTree = "<group>"; };
 		F45846B91ED85E5C00729B9C /* HttpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpViewController.m; sourceTree = "<group>"; };
+		F485D0F41EE03CB900346C48 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = img/icon.png; sourceTree = "<group>"; };
 		F487D9AB1ED6EE3D00948243 /* compress_erhai@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "compress_erhai@2x.jpg"; path = "img/compress_erhai@2x.jpg"; sourceTree = "<group>"; };
 		F487D9AD1ED6F9FA00948243 /* empty_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty_img.png; path = img/empty_img.png; sourceTree = "<group>"; };
 		F495AB7E1E89186C00573334 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		B607D8101E9297EC004E7DC9 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				F485D0F41EE03CB900346C48 /* icon.png */,
 				F487D9AD1ED6F9FA00948243 /* empty_img.png */,
 				F4983A631ED6B0AC0031E322 /* compress_erhai@3x.jpg */,
 				F42AB9A91E95EF9A0073343D /* back.png */,
@@ -514,6 +517,7 @@
 				F4983A641ED6B0AC0031E322 /* compress_erhai@3x.jpg in Resources */,
 				F487D9AE1ED6F9FA00948243 /* empty_img.png in Resources */,
 				F495AB7F1E89186C00573334 /* .gitignore in Resources */,
+				F485D0F51EE03CB900346C48 /* icon.png in Resources */,
 				F487D9AC1ED6EE3D00948243 /* compress_erhai@2x.jpg in Resources */,
 				F4EED1E41E8CE525005BF07B /* Localizable.strings in Resources */,
 				F45280B61E88E0C0000C9F45 /* Assets.xcassets in Resources */,
