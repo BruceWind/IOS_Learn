@@ -47,4 +47,12 @@
     
 }
 
+
+
+-(NSString *)getTitle
+{
+    return @"用AFN请求JSON";
+}
+
+
 @end

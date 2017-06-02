@@ -100,5 +100,9 @@
 }
 
 
+-(NSString *)getTitle
+{
+    return @"滚动条";
+}
 
 @end

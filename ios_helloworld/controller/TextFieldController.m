@@ -79,4 +79,10 @@
 }
 
 
+-(NSString *)getTitle
+{
+    return @"测试TextField";
+}
+
+
 @end

@@ -25,4 +25,10 @@
     
 }
 
+
+-(NSString *)getTitle
+{
+    return @"OC调用C";
+}
+
 @end

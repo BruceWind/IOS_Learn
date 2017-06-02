@@ -26,6 +26,7 @@
 		F418B9AA1EA6376C00143F1E /* ToolBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F418B99E1EA6376C00143F1E /* ToolBarController.m */; };
 		F418B9AF1EA63B2B00143F1E /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = F418B9AD1EA63B2B00143F1E /* test.c */; };
 		F420C7601EAE0FFB005746CB /* UIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F420C75F1EAE0FFB005746CB /* UIImageViewController.m */; };
+		F429580E1EE1871A00951522 /* AccelerometerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F429580D1EE1871A00951522 /* AccelerometerController.m */; };
 		F42AB9AA1E95EF9A0073343D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = F42AB9A91E95EF9A0073343D /* back.png */; };
 		F45280AB1E88E0C0000C9F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AA1E88E0C0000C9F45 /* main.m */; };
 		F45280AE1E88E0C0000C9F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280AD1E88E0C0000C9F45 /* AppDelegate.m */; };
@@ -109,6 +110,8 @@
 		F41A5D241ED954BE000A2E50 /* HttpCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HttpCallback.h; path = network/HttpCallback.h; sourceTree = "<group>"; };
 		F420C75E1EAE0F2C005746CB /* UIImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewController.h; sourceTree = "<group>"; };
 		F420C75F1EAE0FFB005746CB /* UIImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewController.m; sourceTree = "<group>"; };
+		F429580C1EE186A900951522 /* AccelerometerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccelerometerController.h; sourceTree = "<group>"; };
+		F429580D1EE1871A00951522 /* AccelerometerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerController.m; sourceTree = "<group>"; };
 		F42AB9A91E95EF9A0073343D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = img/back.png; sourceTree = "<group>"; };
 		F45280A61E88E0C0000C9F45 /* ios_helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45280AA1E88E0C0000C9F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -228,21 +231,25 @@
 		F418B98A1EA6376C00143F1E /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				F429580C1EE186A900951522 /* AccelerometerController.h */,
+				F429580D1EE1871A00951522 /* AccelerometerController.m */,
 				F418B98B1EA6376C00143F1E /* ButtonViewController.h */,
 				F418B98C1EA6376C00143F1E /* ButtonViewController.m */,
+				F45846B81ED85E3F00729B9C /* HttpViewController.h */,
+				F45846B91ED85E5C00729B9C /* HttpViewController.m */,
 				F418B98D1EA6376C00143F1E /* LabelController.h */,
 				F418B98E1EA6376C00143F1E /* LabelController.m */,
 				F418B98F1EA6376C00143F1E /* MainViewController.h */,
 				F418B9901EA6376C00143F1E /* MainViewController.m */,
 				F418B9911EA6376C00143F1E /* ObjCallCController.h */,
 				F418B9921EA6376C00143F1E /* ObjCallCController.m */,
-				F418B9931EA6376C00143F1E /* StatusBarController.h */,
-				F418B9941EA6376C00143F1E /* StatusBarController.m */,
 				F418B9951EA6376C00143F1E /* TabAController.h */,
 				F418B9961EA6376C00143F1E /* TabAController.m */,
 				F418B9971EA6376C00143F1E /* TabBarDemoController.h */,
 				F418B9981EA6376C00143F1E /* TabBarDemoController.m */,
 				F418B9991EA6376C00143F1E /* TabBController.h */,
+				F418B9931EA6376C00143F1E /* StatusBarController.h */,
+				F418B9941EA6376C00143F1E /* StatusBarController.m */,
 				F418B99A1EA6376C00143F1E /* TabBController.m */,
 				F418B99B1EA6376C00143F1E /* TextFieldController.h */,
 				F418B99C1EA6376C00143F1E /* TextFieldController.m */,
@@ -256,8 +263,6 @@
 				F4AB38231EC7653A004F8809 /* ScrollViewController.h */,
 				F41898311ED5837B006DA54B /* SLWeiboController.h */,
 				F41898321ED583D7006DA54B /* SLWeiboController.m */,
-				F45846B91ED85E5C00729B9C /* HttpViewController.m */,
-				F45846B81ED85E3F00729B9C /* HttpViewController.h */,
 				F46331CC1EE17F5300AD121B /* ThreadController.h */,
 				F46331CD1EE1803600AD121B /* ThreadController.m */,
 			);
@@ -617,6 +622,7 @@
 				F418B9AA1EA6376C00143F1E /* ToolBarController.m in Sources */,
 				F418B9A41EA6376C00143F1E /* ObjCallCController.m in Sources */,
 				F418B9A51EA6376C00143F1E /* StatusBarController.m in Sources */,
+				F429580E1EE1871A00951522 /* AccelerometerController.m in Sources */,
 				F418B9A61EA6376C00143F1E /* TabAController.m in Sources */,
 				F418B9A21EA6376C00143F1E /* LabelController.m in Sources */,
 				F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */,

@@ -104,4 +104,11 @@
 {
     return NO;
 }
+
+
+-(NSString *)getTitle
+{
+    return @"模拟微博的ListView";
+}
+
 @end

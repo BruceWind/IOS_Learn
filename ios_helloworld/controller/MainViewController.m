@@ -22,6 +22,7 @@
 #import "SLWeiboController.h"
 #import "HttpViewController.h"
 #import "ThreadController.h"
+#import "AccelerometerController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -105,6 +106,7 @@
     [list addObject:[[TableItemModel alloc] initWith:@"SLWeiboController":[SLWeiboController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"HttpController" :[HttpViewController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"Thead/NSOperation..." :[ThreadController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"Accelerometer" :[AccelerometerController class]]];
     
     return list;
 }

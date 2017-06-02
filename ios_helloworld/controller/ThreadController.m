@@ -74,8 +74,12 @@
     [blockOp waitUntilFinished];//阻塞当前线程等到 blockOp执行结束
     [super logPrint:@"NSOperation finishded."];
     
+}
 
-    
+
+-(NSString *)getTitle
+{
+    return @"IOS各种异步方案测试";
 }
 
 @end

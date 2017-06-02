@@ -25,4 +25,8 @@ extern  void Test();
     [self.label setText:[NSString stringWithUTF8String:cplus_get_str()]];
 }
 
+-(NSString *)getTitle
+{
+    return @"OC调用C++";
+}
 @end

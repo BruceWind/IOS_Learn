@@ -17,3 +17,5 @@
 > - 15.不同分辨率分别区分2x 3x图片展示
 > - 16.使用AFN请求json服务器接口
 > - 17.Thread，NSOperationQueue，GCD
+> - 18.Accelerometer
+

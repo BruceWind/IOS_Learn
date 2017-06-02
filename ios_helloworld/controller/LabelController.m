@@ -34,4 +34,10 @@
     _label.textAlignment = NSTextAlignmentCenter;
 }
 
+
+-(NSString *)getTitle
+{
+    return @"标签控件";
+}
+
 @end

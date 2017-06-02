@@ -32,4 +32,11 @@
     
     self.selectedIndex = 1;//选中第二个
 }
+
+
+
+-(NSString *)getTitle
+{
+    return @"TabBar控件";
+}
 @end
