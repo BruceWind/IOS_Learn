@@ -21,6 +21,7 @@
 #import "ScrollViewController.h"
 #import "SLWeiboController.h"
 #import "HttpViewController.h"
+#import "ThreadController.h"
 
 @interface MainViewController()<UITableViewDataSource,UITableViewDelegate>
 
@@ -87,7 +88,7 @@
 {
     NSMutableArray<TableItemModel *> * list= [NSMutableArray new];
     
-    [list addObject:[[TableItemModel alloc] initWith:@"Thread/NSOperation/Label":[LabelController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"Label":[LabelController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"Button":[ButtonViewController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"TextField":[TextFieldController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"ImageView":[UIImageViewController class]]];
@@ -103,6 +104,7 @@
     [list addObject:[[TableItemModel alloc] initWith:@"ObjCallCPlus":[ObjCallCPlusController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"SLWeiboController":[SLWeiboController class]]];
     [list addObject:[[TableItemModel alloc] initWith:@"HttpController" :[HttpViewController class]]];
+    [list addObject:[[TableItemModel alloc] initWith:@"Thead/NSOperation..." :[ThreadController class]]];
     
     return list;
 }

@@ -34,6 +34,7 @@
 		F45280CF1E88E0C0000C9F45 /* ios_helloworldUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45280CE1E88E0C0000C9F45 /* ios_helloworldUITests.m */; };
 		F45846B61ED84F8B00729B9C /* HttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F45846B51ED84F8B00729B9C /* HttpUtils.m */; };
 		F45846BA1ED85E5C00729B9C /* HttpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45846B91ED85E5C00729B9C /* HttpViewController.m */; };
+		F46331CE1EE1803600AD121B /* ThreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46331CD1EE1803600AD121B /* ThreadController.m */; };
 		F485D0F51EE03CB900346C48 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F485D0F41EE03CB900346C48 /* icon.png */; };
 		F487D9AC1ED6EE3D00948243 /* compress_erhai@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F487D9AB1ED6EE3D00948243 /* compress_erhai@2x.jpg */; };
 		F487D9AE1ED6F9FA00948243 /* empty_img.png in Resources */ = {isa = PBXBuildFile; fileRef = F487D9AD1ED6F9FA00948243 /* empty_img.png */; };
@@ -125,6 +126,8 @@
 		F45846B71ED84FA700729B9C /* HttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpUtils.h; path = network/HttpUtils.h; sourceTree = "<group>"; };
 		F45846B81ED85E3F00729B9C /* HttpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpViewController.h; sourceTree = "<group>"; };
 		F45846B91ED85E5C00729B9C /* HttpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpViewController.m; sourceTree = "<group>"; };
+		F46331CC1EE17F5300AD121B /* ThreadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadController.h; sourceTree = "<group>"; };
+		F46331CD1EE1803600AD121B /* ThreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadController.m; sourceTree = "<group>"; };
 		F485D0F41EE03CB900346C48 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = img/icon.png; sourceTree = "<group>"; };
 		F487D9AB1ED6EE3D00948243 /* compress_erhai@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "compress_erhai@2x.jpg"; path = "img/compress_erhai@2x.jpg"; sourceTree = "<group>"; };
 		F487D9AD1ED6F9FA00948243 /* empty_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty_img.png; path = img/empty_img.png; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 				F41898321ED583D7006DA54B /* SLWeiboController.m */,
 				F45846B91ED85E5C00729B9C /* HttpViewController.m */,
 				F45846B81ED85E3F00729B9C /* HttpViewController.h */,
+				F46331CC1EE17F5300AD121B /* ThreadController.h */,
+				F46331CD1EE1803600AD121B /* ThreadController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -616,6 +621,7 @@
 				F418B9A21EA6376C00143F1E /* LabelController.m in Sources */,
 				F4EED1DA1E8BB260005BF07B /* TableItemModel.m in Sources */,
 				F45280AB1E88E0C0000C9F45 /* main.m in Sources */,
+				F46331CE1EE1803600AD121B /* ThreadController.m in Sources */,
 				F4C947581EA644140011BD8B /* CPlusTest.cpp in Sources */,
 				F4C6DBD41E8A6AD7009CDF41 /* BaseApplication.m in Sources */,
 				F41898281ED57BED006DA54B /* SLWeibo.m in Sources */,

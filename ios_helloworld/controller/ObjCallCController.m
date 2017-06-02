@@ -19,7 +19,9 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    [super logPrint:@"begin call c."];
     [self.label setText:[NSString stringWithUTF8String:c_get_str()]];
+    [super logPrint:@"end call c."];
     
 }
 
